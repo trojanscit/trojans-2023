@@ -50,19 +50,6 @@ h1 {
     0 0 82px #bc13fe, 0 0 92px #bc13fe, 0 0 102px #bc13fe, 0 0 151px #bc13fe;
 }
 
-/* body {
-  font-size: 18px;
-  font-family: "Sacramento", sans-serif;
-  background-color: #010a01;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* h1 {
-  text-align: center;
-  font-weight: 400;
-} */
 
 #btn {
   position: relative;
@@ -70,7 +57,6 @@ h1 {
   left: 0;
   justify-content: center;
   align-items: center;
-  /* min-height: 100vh; */
   background: linear-gradient(to bottom, #1a181b, #350048); /*fiolet*/
   width: 120px;
   height: 30px;

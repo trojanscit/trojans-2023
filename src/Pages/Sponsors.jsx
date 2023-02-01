@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/sponsors.css";
+import backgrdvdo from "../images/sponsorbackgrd.mp4";
 function Sponsors() {
   return (
     <div class="container1">
@@ -33,6 +34,11 @@ function Sponsors() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
+      </div>
+      <div>
+        <video autoPlay loop muted id="videoback">
+          <source src={backgrdvdo} type="video/mp4" />
+        </video>
       </div>
     </div>
   );
