@@ -1,40 +1,73 @@
 import React from "react";
 import "../styles/sponsors.css";
-import backgrdvdo from "../images/sponsorbackgrd.mp4";
+import amazon from "../images/amazon.jpg";
+import backgrdvdo from "../images/backgroundvideo.mp4";
+import Tilt from "react-tilt";
+
 function Sponsors() {
   return (
-    <div class="container1">
-      <h1 id="spons">OUR TOP SPONSORS</h1>
-      <div class="box" data-aos="fade-down" data-aos-duration="2000">
-        <span></span>
-        <div class="content">
-          <h2>GOGO SOON</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
+    <div className="container8">
+      <div id="sponsor" class="neonText">
+        <h1>OUR SPONSORS</h1>
       </div>
-      <div class="box" data-aos="fade-down" data-aos-duration="2000">
-        <span></span>
-        <div class="content">
-          <h2>KASADARA TECH</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+      <Tilt options={{ max: 35, transition: true }} className="tilt">
+        <div class="card box">
+          <span></span>
+          <div class="card-img">
+            <img src={amazon} />
+          </div>
+          <div class="card-body box">
+            <h2 class="card-title" data-tilt>
+              amazon
+            </h2>
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Similique qui praesentium minus quidem distinctio, fuga facilis
+              voluptatem nisi laudantium perspiciatis, dolorum perferendis nam
+              quod? Accusamus.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="box" data-aos="fade-down" data-aos-duration="2000">
-        <span></span>
-        <div class="content">
-          <h2>DRIVE</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+      </Tilt>
+      <Tilt options={{ max: 35, transition: true }} className="tilt">
+        <div class="card box">
+          <span></span>
+          <div class="card-img">
+            <img src={amazon} />
+          </div>
+          <div class="card-body box">
+            <h2 class="card-title" data-tilt>
+              amazon
+            </h2>
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Similique qui praesentium minus quidem distinctio, fuga facilis
+              voluptatem nisi laudantium perspiciatis, dolorum perferendis nam
+              quod? Accusamus.
+            </p>
+          </div>
         </div>
-      </div>
+      </Tilt>
+      <Tilt options={{ max: 35, transition: true }} className="tilt">
+        <div class="card box">
+          <span></span>
+          <div class="card-img">
+            <img src={amazon} />
+          </div>
+          <div class="card-body box">
+            <h2 class="card-title" data-tilt>
+              amazon
+            </h2>
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Similique qui praesentium minus quidem distinctio, fuga facilis
+              voluptatem nisi laudantium perspiciatis, dolorum perferendis nam
+              quod? Accusamus.
+            </p>
+          </div>
+        </div>
+      </Tilt>
+
       <div>
         <video autoPlay loop muted id="videoback">
           <source src={backgrdvdo} type="video/mp4" />

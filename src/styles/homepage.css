@@ -1,0 +1,309 @@
+.hero-container {
+  display: flex;
+  height: 100vh;
+}
+.tro_title {
+  width: fit-content;
+  position: absolute;
+  font-size: 40px;
+  top: 35px;
+  left: 130px;
+  text-shadow: rgb(198, 238, 78) 2px 0px 0px, rgb(198, 238, 78) -2px 0px 0px,
+    rgb(198, 238, 78) 0px 2px 0px, rgb(198, 238, 78) 0px -2px 0px,
+    rgb(198, 238, 78) 1px 1px, rgb(198, 238, 78) -1px -1px 0px,
+    rgb(198, 238, 78) 1px -1px 0px, rgb(198, 238, 78) -1px 1px 0px,
+    rgb(198, 238, 78) 0px 0px 7px, rgb(198, 238, 78) 0px 0px 10px,
+    rgb(198, 238, 78) 0px 0px 21px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 16px;
+}
+.cit_logo {
+  width: 500px;
+  height: 70px;
+  margin: 10px 5px 30px 5px;
+}
+.cit_title {
+  display: none;
+}
+.gls-card {
+  position: absolute;
+  width: 700px;
+  height: 550px;
+  background-color: #fff;
+  left: 29%;
+  top: 10%;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: float 1s infinite alternate;
+  box-shadow: 2px 2px 25px #38e8ff;
+  z-index: 99;
+}
+.logo_round {
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+}
+.gls-card.holo {
+  position: absolute;
+  bottom: 0;
+}
+
+.holo {
+  position: relative;
+  z-index: 1;
+  width: 490px;
+  height: 20px;
+  left: 9px;
+  top: 96%;
+
+  margin: -5px auto 0;
+  background-color: rgba(0, 252, 252, 0.35);
+  border-radius: 100%;
+  filter: blur(2.5px);
+  transform: perspective(100px) rotateX(-40deg);
+  transform-style: preserve-3d;
+  animation: holographic 1.5s infinite alternate;
+  backface-visibility: hidden;
+}
+.holo:after {
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  content: "";
+  height: 10px;
+  background-color: rgba(0, 252, 252, 0.5);
+  border-radius: 100%;
+  filter: blur(2.5px);
+}
+.holo + .holo {
+  animation-duration: 0.75s;
+  opacity: 0.5;
+}
+@keyframes float {
+  from {
+    will-change: unset;
+    transform: translateY(-10px);
+  }
+  to {
+    will-change: transform;
+    transform: translateY(-30px);
+  }
+}
+@keyframes holographic {
+  from {
+    will-change: box-shadow;
+    box-shadow: 0 -75px 5px rgba(0, 252, 252, 0.15),
+      0 -1px 2px rgba(0, 252, 252, 0.5), 0 -45px 5px rgba(0, 252, 252, 0.15),
+      0 -2px 3px rgba(0, 252, 252, 0.5), 0 -3px 4px rgba(0, 252, 252, 0.5),
+      0 -4px 6px rgba(0, 252, 252, 0.5), 0 -5px 10px rgba(0, 252, 252, 0.75),
+      0 -7px 20px rgba(0, 252, 252, 0.75), 0 -10px 30px rgba(0, 252, 252, 0.75),
+      0 -15px 40px rgba(0, 252, 252, 0.75), 0 -25px 50px rgba(0, 252, 252, 0.75),
+      0 -35px 60px rgba(0, 252, 252, 0.85), 0 -45px 70px rgba(0, 252, 252, 0.95),
+      0 -65px 80px rgba(0, 252, 252, 1), 0 -75px 90px rgba(0, 252, 252, 1);
+  }
+  to {
+    will-change: unset;
+    box-shadow: 0 -1px 5px rgba(0, 252, 252, 0.15),
+      0 -1px 2px rgba(0, 252, 252, 0.5), 0 -1px 5px rgba(0, 252, 252, 0.15),
+      0 -2px 3px rgba(0, 252, 252, 0.5), 0 -3px 4px rgba(0, 252, 252, 0.5),
+      0 -4px 6px rgba(0, 252, 252, 0.5), 0 -5px 7px rgba(0, 252, 252, 0.75),
+      0 -7px 10px rgba(0, 252, 252, 0.75), 0 -10px 15px rgba(0, 252, 252, 0.75),
+      0 -15px 20px rgba(0, 252, 252, 0.75), 0 -25px 25px rgba(0, 252, 252, 0.75),
+      0 -35px 30px rgba(0, 252, 252, 0.85), 0 -45px 35px rgba(0, 252, 252, 0.95),
+      0 -65px 40px rgba(0, 252, 252, 1), 0 -75px 50px rgba(0, 252, 252, 1);
+  }
+}
+
+.text {
+  padding: 0 25px 0 25px;
+  letter-spacing: 3px;
+  text-shadow: rgb(119, 115, 5) 2px 0px 0px, rgb(86, 208, 242) -2px 0px 0px,
+    rgb(86, 208, 242) 0px 2px 0px, rgb(86, 208, 242) 0px -2px 0px,
+    rgb(86, 208, 242) 1px 1px, rgb(86, 208, 242) -1px -1px 0px,
+    rgb(86, 208, 242) 1px -1px 0px, rgb(86, 208, 242) -1px 1px 0px,
+    rgb(86, 208, 242) 0px 0px 7px, rgb(86, 208, 242) 0px 0px 10px,
+    rgb(86, 208, 242) 0px 0px 21px;
+}
+#button1 {
+  width: 100px;
+  padding: 2px;
+  font-size: 30px;
+  position: fixed;
+  top: 89%;
+  left: 80%;
+  border-radius: 20px;
+  border: 1px solid red;
+  height: fit-content;
+  background: #ff1f71;
+  box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
+    0 0 60px #ff1f71;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .tro_title {
+    width: fit-content;
+    position: absolute;
+    font-size: 40px;
+    top: 25px;
+    left: 10px;
+    text-shadow: rgb(198, 238, 78) 2px 0px 0px, rgb(198, 238, 78) -2px 0px 0px,
+      rgb(198, 238, 78) 0px 2px 0px, rgb(198, 238, 78) 0px -2px 0px,
+      rgb(198, 238, 78) 1px 1px, rgb(198, 238, 78) -1px -1px 0px,
+      rgb(198, 238, 78) 1px -1px 0px, rgb(198, 238, 78) -1px 1px 0px,
+      rgb(198, 238, 78) 0px 0px 7px, rgb(198, 238, 78) 0px 0px 10px,
+      rgb(198, 238, 78) 0px 0px 21px;
+  }
+  .cit_logo {
+    width: 250px;
+    height: 70px;
+    margin: 10px 5px 30px 5px;
+  }
+  .gls-card {
+    position: absolute;
+    width: 81vw;
+    height: 70vh;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    top: 17%;
+    left: 10%;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: float 1s infinite alternate;
+    box-shadow: 2px 2px 25px #38e8ff;
+  }
+
+  .gls-card.holo {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .holo {
+    position: relative;
+    z-index: 2;
+    width: 200px;
+    height: 20px;
+    left: 9px;
+    top: 98%;
+
+    margin: -5px auto 0;
+    background-color: rgba(0, 252, 252, 0.35);
+    border-radius: 100%;
+    filter: blur(2.5px);
+    transform: perspective(100px) rotateX(-40deg);
+    transform-style: preserve-3d;
+    animation: holographic 1.5s infinite alternate;
+    backface-visibility: hidden;
+  }
+  .holo:after {
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    content: "";
+    height: 10px;
+    background-color: rgba(0, 252, 252, 0.5);
+    border-radius: 100%;
+    filter: blur(2.5px);
+  }
+  .holo + .holo {
+    animation-duration: 0.75s;
+    opacity: 0.5;
+  }
+  @keyframes float {
+    from {
+      will-change: unset;
+      transform: translateY(-10px);
+    }
+    to {
+      will-change: transform;
+      transform: translateY(-30px);
+    }
+  }
+  @keyframes holographic {
+    from {
+      will-change: box-shadow;
+      box-shadow: 0 -75px 5px rgba(0, 252, 252, 0.15),
+        0 -1px 2px rgba(0, 252, 252, 0.5), 0 -45px 5px rgba(0, 252, 252, 0.15),
+        0 -2px 3px rgba(0, 252, 252, 0.5), 0 -3px 4px rgba(0, 252, 252, 0.5),
+        0 -4px 6px rgba(0, 252, 252, 0.5), 0 -5px 10px rgba(0, 252, 252, 0.75),
+        0 -7px 20px rgba(0, 252, 252, 0.75),
+        0 -10px 30px rgba(0, 252, 252, 0.75),
+        0 -15px 40px rgba(0, 252, 252, 0.75),
+        0 -25px 50px rgba(0, 252, 252, 0.75),
+        0 -35px 60px rgba(0, 252, 252, 0.85),
+        0 -45px 70px rgba(0, 252, 252, 0.95), 0 -65px 80px rgba(0, 252, 252, 1),
+        0 -75px 90px rgba(0, 252, 252, 1);
+    }
+    to {
+      will-change: unset;
+      box-shadow: 0 -1px 5px rgba(0, 252, 252, 0.15),
+        0 -1px 2px rgba(0, 252, 252, 0.5), 0 -1px 5px rgba(0, 252, 252, 0.15),
+        0 -2px 3px rgba(0, 252, 252, 0.5), 0 -3px 4px rgba(0, 252, 252, 0.5),
+        0 -4px 6px rgba(0, 252, 252, 0.5), 0 -5px 7px rgba(0, 252, 252, 0.75),
+        0 -7px 10px rgba(0, 252, 252, 0.75),
+        0 -10px 15px rgba(0, 252, 252, 0.75),
+        0 -15px 20px rgba(0, 252, 252, 0.75),
+        0 -25px 25px rgba(0, 252, 252, 0.75),
+        0 -35px 30px rgba(0, 252, 252, 0.85),
+        0 -45px 35px rgba(0, 252, 252, 0.95), 0 -65px 40px rgba(0, 252, 252, 1),
+        0 -75px 50px rgba(0, 252, 252, 1);
+    }
+  }
+  .text {
+    /* padding: 0 20px 0 20px; */
+    padding: 0 9px 0 9px;
+    letter-spacing: 1.1px;
+    font-size: 14px;
+    overflow: hidden;
+    text-shadow: rgb(119, 115, 5) 2px 0px 0px, rgb(86, 208, 242) -2px 0px 0px,
+      rgb(86, 208, 242) 0px 2px 0px, rgb(86, 208, 242) 0px -2px 0px,
+      rgb(86, 208, 242) 1px 1px, rgb(86, 208, 242) -1px -1px 0px,
+      rgb(86, 208, 242) 1px -1px 0px, rgb(86, 208, 242) -1px 1px 0px,
+      rgb(86, 208, 242) 0px 0px 7px, rgb(86, 208, 242) 0px 0px 10px,
+      rgb(86, 208, 242) 0px 0px 21px;
+  }
+  .tro_title {
+    font-size: 23px;
+    left: 50%;
+  }
+  #button1 {
+    width: 70px;
+    padding: 1px;
+    font-size: 30px;
+    position: fixed;
+    top: 89%;
+    left: 70%;
+    border-radius: 20px;
+    border: 1px solid red;
+    height: fit-content;
+    background: #ff1f71;
+    box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
+      0 0 60px #ff1f71;
+  }
+  .logo_round {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+  }
+}

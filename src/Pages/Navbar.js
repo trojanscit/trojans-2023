@@ -1,6 +1,7 @@
 import "../styles/navbar.css";
 import { React, useState } from "react";
-// import { L } from "react-router-dom";
+import logo1 from "../Assets/Trojans_logo/trojans-compressed.webp";
+import logo2 from "../Assets/Trojans_logo/trojans_logo.webp";
 import on from "../images/wifi.png";
 import off from "../images/wifioff.png";
 const NavBar = () => {
@@ -22,7 +23,7 @@ const NavBar = () => {
     <div className="container">
       <div className={color ? "header header-bg" : "header"}>
         <a>
-          <h1>logo</h1>
+          <img id="logotrojans" src={logo1} width="200px" />
         </a>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <div id={click ? "neon" : "btn"}>

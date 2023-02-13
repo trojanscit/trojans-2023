@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Events from "./Pages/Events";
 import Home from "./Pages/Home";
+import Homepage from "./Pages/homepage";
 import Registration from "./Pages/Registration";
 import Sponsors from "./Pages/Sponsors";
 import "./styles/App.css";
@@ -15,8 +16,10 @@ function App() {
     //   </Routes>
     // </Router>
     <div className="body">
-      <Home />
+      {/* <Home /> */}
+      {/* <Events /> */}
       <Sponsors />
+      {/* <Homepage /> */}
       {/* <Workshop /> */}
     </div>
   );
