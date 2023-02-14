@@ -3,6 +3,7 @@ import Events from "./Pages/Events";
 import Homepage from "./Pages/homepage";
 import Sponsors from "./Pages/Sponsors";
 import "./styles/App.css";
+
 function App() {
   return (
     // <Router>
@@ -14,10 +15,9 @@ function App() {
     //   </Routes>
     // </Router>
     <div className="body">
-      {/* <Home /> */}
       {/* <Events /> */}
+      <Homepage />
       {/* <Sponsors /> */}
-      {/* <Homepage /> */}
       {/* <Workshop /> */}
     </div>
   );
