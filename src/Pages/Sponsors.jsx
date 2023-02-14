@@ -10,9 +10,10 @@ function Sponsors() {
       <div id="sponsor" class="neonText">
         <h1>OUR SPONSORS</h1>
       </div>
+
       <Tilt options={{ max: 35, transition: true }} className="tilt">
-        <div class="card box">
-          <span></span>
+        <div class="cardsp boxsponsor">
+          <span id="span12"></span>
           <div class="card-img">
             <img src={amazon} />
           </div>
@@ -30,27 +31,8 @@ function Sponsors() {
         </div>
       </Tilt>
       <Tilt options={{ max: 35, transition: true }} className="tilt">
-        <div class="card box">
-          <span></span>
-          <div class="card-img">
-            <img src={amazon} />
-          </div>
-          <div class="card-body box">
-            <h2 class="card-title" data-tilt>
-              amazon
-            </h2>
-            <p class="card-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Similique qui praesentium minus quidem distinctio, fuga facilis
-              voluptatem nisi laudantium perspiciatis, dolorum perferendis nam
-              quod? Accusamus.
-            </p>
-          </div>
-        </div>
-      </Tilt>
-      <Tilt options={{ max: 35, transition: true }} className="tilt">
-        <div class="card box">
-          <span></span>
+        <div class="cardsp boxsponsor">
+          <span id="span12"></span>
           <div class="card-img">
             <img src={amazon} />
           </div>

@@ -6,36 +6,36 @@ function eventsbg() {
   return (
     <div>
       {/* technical eventlist */}
-      <meta name="viewport" content="width=device-width" />
+
       <div className="contain" id="tbox">
         <div className="boxevents">
           <a href="#tevent1" className="tevent1">
             <div className="techEvent">
-              <h4>Event Name 1</h4>
+              <h4 id="h4">Event Name 1</h4>
             </div>
           </a>
           <a href="#tevent2" className="tevent2">
             <div className="techEvent">
-              <h4>Event Name 2</h4>
+              <h4 id="h4">Event Name 2</h4>
             </div>
           </a>
           <a href="#tevent3" className="tevent3">
             <div className="techEvent">
-              <h4>Event Name 3</h4>
+              <h4 id="h4">Event Name 3</h4>
             </div>
           </a>
           <a href="#tevent4" className="tevent4">
             <div className="techEvent">
-              <h4>Event Name 4</h4>
+              <h4 id="h4">Event Name 4</h4>
             </div>
           </a>
           <a href="#tevent5" className="tevent5">
             <div className="techEvent">
-              <h4>Event Name 5</h4>
+              <h4 id="h4">Event Name 5</h4>
             </div>
           </a>
           <div className="techEvent">
-            <h4>Event Name 6</h4>
+            <h4 id="h4">Event Name 6</h4>
           </div>
         </div>
       </div>
@@ -45,31 +45,31 @@ function eventsbg() {
         <div className="boxevents">
           <a href="#tevent1" className="tevent1">
             <div className="techEvent">
-              <h4>NEvent Name 1</h4>
+              <h4 id="h4">NEvent Name 1</h4>
             </div>
           </a>
           <a href="#tevent2" className="tevent2">
             <div className="techEvent">
-              <h4>NEvent Name 2</h4>
+              <h4 id="h4">NEvent Name 2</h4>
             </div>
           </a>
           <a href="#tevent3" className="tevent3">
             <div className="techEvent">
-              <h4>Event Name 3</h4>
+              <h4 id="h4">Event Name 3</h4>
             </div>
           </a>
           <a href="#tevent4" className="tevent4">
             <div className="techEvent">
-              <h4>Event Name 4</h4>
+              <h4 id="h4">Event Name 4</h4>
             </div>
           </a>
           <a href="#tevent5" className="tevent5">
             <div className="techEvent">
-              <h4>Event Name 5</h4>
+              <h4 id="h4">Event Name 5</h4>
             </div>
           </a>
           <div className="techEvent">
-            <h4>Event Name 6</h4>
+            <h4 id="h4">Event Name 6</h4>
           </div>
         </div>
       </div>
@@ -81,31 +81,31 @@ function eventsbg() {
         <div className="boxevents">
           <a href="#tevent1" className="tevent1">
             <div className="techEvent">
-              <h4>gaming 1</h4>
+              <h4 id="h4">gaming 1</h4>
             </div>
           </a>
           <a href="#tevent2" className="tevent2">
             <div className="techEvent">
-              <h4>NEvent Name 2</h4>
+              <h4 id="h4">NEvent Name 2</h4>
             </div>
           </a>
           <a href="#tevent3" className="tevent3">
             <div className="techEvent">
-              <h4>Event Name 3</h4>
+              <h4 id="h4">Event Name 3</h4>
             </div>
           </a>
           <a href="#tevent4" className="tevent4">
             <div className="techEvent">
-              <h4>Event Name 4</h4>
+              <h4 id="h4">Event Name 4</h4>
             </div>
           </a>
           <a href="#tevent5" className="tevent5">
             <div className="techEvent">
-              <h4>Event Name 5</h4>
+              <h4 id="h4">Event Name 5</h4>
             </div>
           </a>
           <div className="techEvent">
-            <h4>Event Name 6</h4>
+            <h4 id="h4">Event Name 6</h4>
           </div>
         </div>
       </div>
@@ -305,27 +305,27 @@ function eventsbg() {
         <div className="pieces">
           <div className="future_ui__piece">
             <a href="#tbox">
-              <span>Technical</span>
+              <span id="span">Technical</span>
             </a>
             <div className="line" />
           </div>
 
           <div className="future_ui__piece">
             <a href="#ntbox">
-              <span>Non-Technical</span>
+              <span id="span">Non-Technical</span>
             </a>
             <div className="line" />
           </div>
 
           <div className="future_ui__piece">
             <a href="#gaming">
-              <span>Gaming</span>
+              <span id="span">Gaming</span>
             </a>
             <div className="line" />
           </div>
 
           <div className="future_ui__piece">
-            <span>Workshop</span>
+            <span id="span">Workshop</span>
             <div className="line" />
           </div>
           <div className="future_ui__piece blank" />
@@ -368,7 +368,7 @@ function eventsbg() {
         <div className="token">
           <div className="main">
             <h2>Event Name 2</h2>
-            <p>
+            <p id="p">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
               dolores dolorem perspiciatis perferendis ad, vero animi alias ab
               tempora iure. Facilis voluptatibus repellendus quae laborum beatae

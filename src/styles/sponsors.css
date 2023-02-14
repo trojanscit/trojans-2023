@@ -67,7 +67,7 @@
     text-shadow: none;
   }
 }
-.card {
+.cardsp {
   position: relative;
   width: 1rem;
   font-family: "Poppins";
@@ -119,7 +119,7 @@ img {
   color: #a8a8a8;
   transform: translatez(20px);
 }
-.box {
+.boxsponsor {
   --border-size: 3px;
   --border-angle: 0turn;
   width: 60vmin;
@@ -145,7 +145,7 @@ img {
   }
 }
 
-.box:hover {
+.boxsponsor:hover {
   animation-play-state: paused;
 }
 @property --border-angle {
@@ -154,7 +154,7 @@ img {
   initial-value: 0turn;
 }
 
-.box span {
+.boxsponsor #span12 {
   display: block;
   position: absolute;
   top: 0;
@@ -168,7 +168,7 @@ img {
   z-index: 99999999;
 }
 
-.box span::before {
+.boxsponsor #span12::before {
   content: "";
   position: absolute;
   top: 0;
@@ -184,7 +184,7 @@ img {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-.box:hover span::before {
+.boxsponsor:hover #span12::before {
   top: -50px;
   left: 50px;
   width: 100px;
@@ -192,7 +192,7 @@ img {
   opacity: 1;
 }
 
-.box span::after {
+.boxsponsor #span12::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -209,7 +209,7 @@ img {
   animation-delay: -1s;
 }
 
-.box:hover span:after {
+.boxsponsor:hover #span12:after {
   bottom: -50px;
   right: 50px;
   width: 100px;
@@ -228,7 +228,7 @@ img {
   }
 }
 
-.box .content {
+.boxsponsor .content {
   position: relative;
   left: 0;
   padding: 20px 40px;
@@ -241,7 +241,7 @@ img {
   color: #fff;
 }
 
-.box:hover .content {
+.boxsponsor:hover .content {
   left: -25px;
   padding: 60px 40px;
 }
@@ -459,7 +459,7 @@ body {
     top: 70px;
     font-size: 18px;
   }
-  .card {
+  .cardsp {
     position: relative;
     width: 20vw;
     font-family: "Poppins";
@@ -507,7 +507,7 @@ body {
     transform: translatez(20px);
     display: none;
   }
-  .box {
+  .boxsponsor {
     --border-size: 3px;
     --border-angle: 0turn;
     width: 80vmin;
@@ -533,7 +533,7 @@ body {
     }
   }
 
-  .box:hover {
+  .boxsponsor:hover {
     animation-play-state: paused;
   }
   @property --border-angle {
@@ -542,7 +542,7 @@ body {
     initial-value: 0turn;
   }
 
-  .box span {
+  .boxsponsor #span12 {
     display: block;
     position: absolute;
     top: 0;
@@ -556,7 +556,7 @@ body {
     z-index: 99999999;
   }
 
-  .box span::before {
+  .boxsponsor #span12::before {
     content: "";
     position: absolute;
     top: 0;
@@ -573,7 +573,7 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   }
 
-  .box:hover span::before {
+  .boxsponsor:hover #span12::before {
     top: -50px;
     left: 10px;
     width: 100px;
@@ -581,7 +581,7 @@ body {
     opacity: 1;
   }
 
-  .box span::after {
+  .boxsponsor #span12::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -598,7 +598,7 @@ body {
     animation-delay: -1s;
   }
 
-  .box:hover span:after {
+  .boxsponsor:hover #span12:after {
     bottom: -50px;
     right: 50px;
     width: 100px;
@@ -617,7 +617,7 @@ body {
     }
   }
 
-  .box .content {
+  .boxsponsor .content {
     position: relative;
     left: 0;
     padding: 20px 40px;
@@ -630,7 +630,7 @@ body {
     color: #fff;
   }
 
-  .box:hover .content {
+  .boxsponsor:hover .content {
     left: -25px;
     padding: 60px 40px;
   }

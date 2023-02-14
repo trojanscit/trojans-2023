@@ -47,6 +47,7 @@
   animation: float 1s infinite alternate;
   box-shadow: 2px 2px 25px #38e8ff;
   z-index: 99;
+  overflow-wrap: break-word;
 }
 .logo_round {
   margin: 10px;
@@ -127,6 +128,7 @@
 .text {
   padding: 0 25px 0 25px;
   letter-spacing: 3px;
+  overflow-wrap: break-word;
   text-shadow: rgb(119, 115, 5) 2px 0px 0px, rgb(86, 208, 242) -2px 0px 0px,
     rgb(86, 208, 242) 0px 2px 0px, rgb(86, 208, 242) 0px -2px 0px,
     rgb(86, 208, 242) 1px 1px, rgb(86, 208, 242) -1px -1px 0px,

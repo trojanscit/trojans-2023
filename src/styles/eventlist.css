@@ -6,7 +6,6 @@
     margin-top: 40px;
     margin-left: 40px;
     min-width: 350px;
-    min-height: 500px;
     border-radius: 20px;
     --border-size: 3px;
     --border-angle: 0turn;
@@ -49,11 +48,6 @@
     initial-value: 0turn;
   }
 
-  .boxevents h1 {
-    color: antiquewhite;
-    text-align: center;
-  }
-
   .boxevents .techEvent {
     position: relative;
     display: flex;
@@ -71,7 +65,7 @@
     overflow: hidden;
   }
 
-  h4 {
+  #h4 {
     color: #fff;
     text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #e60073, 0 0 2px #e60073,
       0 0 2px #e60073, 0 0 2px #e60073, 0 0 2px #e60073;
@@ -118,7 +112,7 @@
     animation: bg-spin 2s linear infinite;
   }
 
-  .boxevents .techEvent:hover h4 {
+  .boxevents .techEvent:hover #h4 {
     color: #55e2f9;
     animation: glows 0.3s ease-in-out infinite alternate;
     font-family: sans-serif;
@@ -186,7 +180,7 @@
     max-width: 300px;
     min-width: 300px;
     border: solid rgb(187, 1, 88);
-    boxevents-shadow: #e20686 0 0 20px;
+    box-shadow: #e20686 0 0 20px;
     border-style: double;
     border-width: 10px;
     margin-top: 10px;
@@ -250,7 +244,7 @@
     overflow: hidden;
   }
 
-  h4 {
+  #h4 {
     color: #fff;
     text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #e60073, 0 0 1px #e60073,
       0 0 1px #e60073, 0 0 1px #e60073, 0 0 1px #e60073;
@@ -297,7 +291,7 @@
     animation: bg-spin 2s linear infinite;
   }
 
-  .boxevents .techEvent:hover h4 {
+  .boxevents .techEvent:hover #h4 {
     color: #55e2f9;
     animation: glows 0.3s ease-in-out infinite alternate;
     font-family: sans-serif;
