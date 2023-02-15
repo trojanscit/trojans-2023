@@ -26,26 +26,31 @@
   height: 70px;
   margin: 10px 5px 30px 5px;
 }
+.cit_logo.hide {
+  visibility: hidden;
+}
 .cit_title {
   display: none;
 }
 .gls-card {
   position: absolute;
-  width: 700px;
-  height: 550px;
-  background-color: #fff;
+  width: 680px;
+  height: 600px;
+  background-color: transparent;
   left: 29%;
-  top: 10%;
-  background: rgba(255, 255, 255, 0.25);
+  top: 8%;
+  display: flex;
+  flex-direction: column;
+  /* background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   background-size: contain;
-  background-repeat: no-repeat;
-  animation: float 1s infinite alternate;
-  box-shadow: 2px 2px 25px #38e8ff;
+  background-repeat: no-repeat; */
+  /* animation: float 1s infinite alternate; */
+  /* box-shadow: 2px 2px 25px #38e8ff; */
   z-index: 99;
   overflow-wrap: break-word;
 }
@@ -53,6 +58,11 @@
   margin: 10px;
   width: 80px;
   height: 80px;
+  position: absolute;
+  left: 0px;
+}
+.logo_round.hide {
+  visibility: hidden;
 }
 .gls-card.holo {
   position: absolute;
@@ -129,26 +139,27 @@
   padding: 0 25px 0 25px;
   letter-spacing: 3px;
   overflow-wrap: break-word;
-  text-shadow: rgb(119, 115, 5) 2px 0px 0px, rgb(86, 208, 242) -2px 0px 0px,
-    rgb(86, 208, 242) 0px 2px 0px, rgb(86, 208, 242) 0px -2px 0px,
-    rgb(86, 208, 242) 1px 1px, rgb(86, 208, 242) -1px -1px 0px,
-    rgb(86, 208, 242) 1px -1px 0px, rgb(86, 208, 242) -1px 1px 0px,
-    rgb(86, 208, 242) 0px 0px 7px, rgb(86, 208, 242) 0px 0px 10px,
-    rgb(86, 208, 242) 0px 0px 21px;
+  color: white;
+  font-size: 30px;
+  font-family: sans-serif;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
 }
 #button1 {
   width: 100px;
   padding: 2px;
   font-size: 30px;
-  position: fixed;
+  /* font-weight: ; */
+  position: absolute;
   top: 89%;
-  left: 80%;
+  left: 40%;
   border-radius: 20px;
-  border: 1px solid red;
+  border: 0px solid transparent;
   height: fit-content;
-  background: #ff1f71;
-  box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
-    0 0 60px #ff1f71;
+  background: #f9f6f7;
+  box-shadow: 0 0 5px #fffeff, 0 0 15px #fffdfe, 0 0 30px #fffdfe,
+    0 0 60px #f7f5f6;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -160,7 +171,7 @@
   .tro_title {
     width: fit-content;
     position: absolute;
-    font-size: 40px;
+    font-size: 70px;
     top: 25px;
     left: 10px;
     text-shadow: rgb(198, 238, 78) 2px 0px 0px, rgb(198, 238, 78) -2px 0px 0px,
@@ -173,27 +184,31 @@
   .cit_logo {
     width: 250px;
     height: 70px;
-    margin: 10px 5px 30px 5px;
+    position: relative;
+    bottom: 10%;
+    /* margin: 10px 5px 30px 5px; */
   }
   .gls-card {
     position: absolute;
     width: 81vw;
-    height: 70vh;
-    background-color: #fff;
+    background-color: transparent;
+    height: 500px;
     justify-content: center;
     align-items: center;
     top: 17%;
     left: 10%;
-    background: rgba(255, 255, 255, 0.25);
+    /* display: flex; */
+    /* padding: 1px; */
+    /* background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     background-size: contain;
-    background-repeat: no-repeat;
-    animation: float 1s infinite alternate;
-    box-shadow: 2px 2px 25px #38e8ff;
+    background-repeat: no-repeat;*/
+    /* animation: float 1s infinite alternate; */
+    /* box-shadow: 2px 2px 25px #38e8ff; */
   }
 
   .gls-card.holo {
@@ -275,19 +290,20 @@
   .text {
     /* padding: 0 20px 0 20px; */
     padding: 0 9px 0 9px;
-    letter-spacing: 1.1px;
-    font-size: 14px;
+    letter-spacing: 0.6px;
+    font-size: 21px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: 4%;
+    bottom: 13%;
     overflow: hidden;
-    text-shadow: rgb(119, 115, 5) 2px 0px 0px, rgb(86, 208, 242) -2px 0px 0px,
-      rgb(86, 208, 242) 0px 2px 0px, rgb(86, 208, 242) 0px -2px 0px,
-      rgb(86, 208, 242) 1px 1px, rgb(86, 208, 242) -1px -1px 0px,
-      rgb(86, 208, 242) 1px -1px 0px, rgb(86, 208, 242) -1px 1px 0px,
-      rgb(86, 208, 242) 0px 0px 7px, rgb(86, 208, 242) 0px 0px 10px,
-      rgb(86, 208, 242) 0px 0px 21px;
   }
   .tro_title {
-    font-size: 23px;
-    left: 50%;
+    font-size: 38px;
+    position: absolute;
+    top: -16px;
+    left: 40%;
   }
   #button1 {
     width: 70px;
@@ -295,17 +311,22 @@
     font-size: 30px;
     position: fixed;
     top: 89%;
-    left: 70%;
+    left: 44%;
     border-radius: 20px;
-    border: 1px solid red;
+    border: 0px solid transparent;
     height: fit-content;
-    background: #ff1f71;
-    box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
-      0 0 60px #ff1f71;
+    background: #f9f6f7;
+    box-shadow: 0 0 5px #fffeff, 0 0 15px #fffdfe, 0 0 30px #fffdfe,
+      0 0 60px #f7f5f6;
   }
   .logo_round {
-    margin: 10px;
-    width: 50px;
-    height: 50px;
+    /* margin; */
+    margin-left: 32px;
+    width: 60px;
+    height: 60px;
+
+    position: absolute;
+    bottom: 90%;
+    left: -20px;
   }
 }

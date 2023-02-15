@@ -2,7 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Events from "./Pages/Events";
 import Homepage from "./Pages/homepage";
 import Sponsors from "./Pages/Sponsors";
+import Eventshome from "./Pages/eventshome";
 import "./styles/App.css";
+import Home from "./Pages/Home";
 
 function App() {
   return (
@@ -16,9 +18,9 @@ function App() {
     // </Router>
     <div className="body">
       {/* <Events /> */}
-      <Homepage />
       {/* <Sponsors /> */}
       {/* <Workshop /> */}
+      <Home />
     </div>
   );
 }

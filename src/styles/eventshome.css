@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+.bodyevents {
+  width: 100%;
+  min-height: 100vh;
+  background: black;
+  /* display: grid; */
+  place-items: center;
+}
+.cardBox {
+  width: 400px;
+  height: 500px;
+  position: relative;
+  top: 120px;
+  left: 38%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: rgba(40, 245, 235, 0.4) 0px 2px 10px 0px,
+    rgba(142, 249, 245, 0.5) 0px 2px 25px 0px;
+}
+.card-event-home {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  background: #afb1b2;
+  border-radius: 20px;
+  z-index: 9999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #ffffff;
+  overflow: hidden;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.5) 0px 18px 36px -18px inset;
+}
+
+.card-event-home .content h3 {
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+.card-event-home .content p {
+  font-size: 1.6rem;
+  line-height: 25px;
+}
+/* .card-event-home .content {
+  transform: translateY(100%);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease-in-out;
+} */
+
+/* .card-event-home:hover .content {
+  transform: translateY(0);
+  opacity: 1;
+} */
+
+.cardBox::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 150%;
+  background: #40e0d0;
+  background: -webkit-linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
+  background: linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
+  animation: glowing01 5s linear infinite;
+  transform-origin: center;
+  animation: glowing 5s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.be {
+  color: #000814;
+  /* background-color: red; */
+  border-radius: 3%;
+  padding: 10px 98px 10px 98px;
+  margin-bottom: 30px;
+  height: 100px;
+  font-size: 40px;
+  background: #58def5;
+  border: 0px solid transparent;
+  width: 350px;
+  box-shadow: 0 0 5px #58def5, 0 0 10px #58def5, 0 0 3px #58def5,
+    0 0 30px #58def5;
+}
+
+.posters {
+  /* display: none;
+  visibility: hidden; */
+  position: relative;
+  left: -2000px;
+}
+.move-card {
+  width: 400px;
+  height: 500px;
+  position: relative;
+  top: 120px;
+  left: 38%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: rgba(115, 210, 244, 0.4) 0px 2px 10px 0px,
+    rgba(95, 246, 241, 0.5) 0px 2px 25px 0px;
+  transform: translateX(-400px);
+  transition: 3s;
+}
+.move-card::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 150%;
+  background: #40e0d0;
+  background: -webkit-linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
+  background: linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
+  animation: glowing01 5s linear infinite;
+  transform-origin: center;
+  animation: glowing 5s linear infinite;
+}
+.move_poster {
+  width: 800px;
+  height: 500px;
+  position: relative;
+  bottom: 380px;
+  left: 43%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: rgba(115, 210, 244, 0.4) 0px 2px 10px 0px,
+    rgba(95, 246, 241, 0.5) 0px 2px 25px 0px;
+  transition: 2s;
+}
+
+.move_poster::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 200%;
+  background: #40e0d0;
+  background: -webkit-linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
+  background: linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
+  animation: glowing 5s linear infinite;
+  transform-origin: center;
+  animation: glowing 5s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.content-poster {
+  background-color: black;
+  z-index: 9;
+}
+#slider_button_prev {
+  position: absolute;
+  left: 40px;
+  width: 80px;
+  height: 100px;
+  font-size: 70px;
+  border-radius: 50%;
+  background: transparent;
+  top: 45%;
+  z-index: 99999;
+  border: 0px solid transparent;
+}
+#slider_button_next {
+  position: absolute;
+  right: 40px;
+  width: 80px;
+  font-size: 70px;
+  height: 100px;
+  border-radius: 50%;
+  top: 45%;
+  background: transparent;
+  z-index: 99999;
+  border: 0px solid transparent;
+}
+#img_swiper {
+  width: 20vw;
+}
