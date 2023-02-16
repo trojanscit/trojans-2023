@@ -7,21 +7,21 @@ import Tilt from "react-tilt";
 function Sponsors() {
   return (
     <div className="container8">
-      <div id="sponsor" class="neonText">
+      <div id="sponsor" className="neonText">
         <h1>OUR SPONSORS</h1>
       </div>
 
       <Tilt options={{ max: 35, transition: true }} className="tilt">
-        <div class="cardsp boxsponsor">
+        <div className="cardsp boxsponsor">
           <span id="span12"></span>
-          <div class="card-img">
+          <div className="card-img">
             <img src={amazon} />
           </div>
-          <div class="card-body box">
-            <h2 class="card-title" data-tilt>
+          <div className="card-body box">
+            <h2 className="card-title" data-tilt>
               amazon
             </h2>
-            <p class="card-text">
+            <p className="card-text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Similique qui praesentium minus quidem distinctio, fuga facilis
               voluptatem nisi laudantium perspiciatis, dolorum perferendis nam
@@ -31,16 +31,16 @@ function Sponsors() {
         </div>
       </Tilt>
       <Tilt options={{ max: 35, transition: true }} className="tilt">
-        <div class="cardsp boxsponsor">
+        <div className="cardsp boxsponsor">
           <span id="span12"></span>
-          <div class="card-img">
+          <div className="card-img">
             <img src={amazon} />
           </div>
-          <div class="card-body box">
-            <h2 class="card-title" data-tilt>
+          <div className="card-body box">
+            <h2 className="card-title" data-tilt>
               amazon
             </h2>
-            <p class="card-text">
+            <p className="card-text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Similique qui praesentium minus quidem distinctio, fuga facilis
               voluptatem nisi laudantium perspiciatis, dolorum perferendis nam

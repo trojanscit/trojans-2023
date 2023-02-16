@@ -30,20 +30,20 @@ function Teams() {
 	];
 
 	return (
-		<div class="section-fluid-main">
+		<div className="section-fluid-main">
 			<div className="bg"></div>
-			<div class="section-row">
+			<div className="section-row">
 				{allTeams.map((member) => {
 					return (
 						<>
-							<div class="section-col">
-								<div class="section">
-									<div class="section-in">
+							<div className="section-col">
+								<div className="section">
+									<div className="section-in">
 										<img src={member.member_photo} alt="" />
 									</div>
 								</div>
 							</div>
-							<div class="hover-text">
+							<div className="hover-text">
 								<h2>{member.member_name}</h2>
 							</div>
 						</>

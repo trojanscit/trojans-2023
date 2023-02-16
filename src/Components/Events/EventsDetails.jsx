@@ -45,12 +45,12 @@ function EventsDetails() {
 					);
 				}
 			})} */}
-			<div class="section-fluid-main">	
+			<div className="section-fluid-main">	
 				<div className="bg"></div>
 				<div className="main-event-type">
 					<h1>Technical</h1>
 				</div>
-				<div class="section-row">
+				<div className="section-row">
 					{allTeams.map((member) => {
 						return (
 							<>
@@ -154,11 +154,11 @@ function EventsDetails() {
 									</div>
 								) : null}
 								<div
-									class="section-col"
+									className="section-col"
 									onClick={() => setPopBox(true)}
 								>
-									<div class="section">
-										<div class="section-in">
+									<div className="section">
+										<div className="section-in">
 											<img
 												src={member.member_photo}
 												alt=""
@@ -167,7 +167,7 @@ function EventsDetails() {
 										</div>
 									</div>
 								</div>
-								<div class="hover-text">
+								<div className="hover-text">
 									<h2>{member.member_name}</h2>
 								</div>
 							</>

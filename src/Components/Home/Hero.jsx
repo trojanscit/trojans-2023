@@ -16,10 +16,10 @@ const Hero = () => {
 				</div>
 				<div className="reg">
 					<button>
-						<span class="effect"></span>
-						<span class="effect"></span>
-						<span class="effect"></span>
-						<span class="text">register</span>
+						<span className="effect"></span>
+						<span className="effect"></span>
+						<span className="effect"></span>
+						<span className="text">register</span>
 					</button>
 				</div>
 				<div className="scroll">
@@ -27,8 +27,8 @@ const Hero = () => {
 					<img src={scrol} alt=""></img>
 				</div>
 
-				<div class="area">
-					<ul class="circles">
+				<div className="area">
+					<ul className="circles">
 						<li></li>
 						<li></li>
 						<li></li>

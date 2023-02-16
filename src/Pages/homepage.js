@@ -11,10 +11,14 @@ function Homepage() {
 
   return (
     <div className="hero-container">
-      <div class="gls-card">
+      <div className="gls-card">
         <img
-          src={cit ? cit_logo : logo_round}
-          className={cit ? "cit_logo" : "logo_round"}
+          src={cit_logo}
+          className={cit ? "cit_logo" : "hide cit_logo"}
+        ></img>
+        <img
+          src={logo_round}
+          className={cit ? "logo_round hide" : "logo_round"}
         ></img>
         <h1 className={cit ? "cit_title" : "tro_title"}>TROJANS</h1>
         <h2 className="text">
@@ -44,11 +48,11 @@ function Homepage() {
         </h2>
         <div>
           <button onClick={handleClick} id="button1">
-            >
+            {">"}
           </button>
         </div>
       </div>
-      <div class="holo"></div>
+      <div className="holo"></div>
     </div>
   );
 }

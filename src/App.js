@@ -5,7 +5,9 @@ import Homepage from "./Pages/homepage";
 import Registration from "./Pages/Registration";
 import Sponsors from "./Pages/Sponsors";
 import Teams from "./Pages/Teams";
+import Eventshome from "./Pages/eventshome";
 import "./styles/App.css";
+import Home from "./Pages/Home";
 
 function App() {
 	return (

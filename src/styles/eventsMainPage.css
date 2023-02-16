@@ -27,9 +27,9 @@
 	padding: 50px;
 	color: #fff;
 	text-align: center;
-	font-size: 25px;
 }
 .main-event-type h1 {
+	font-size: 25px;
 	text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
 		0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
 }
