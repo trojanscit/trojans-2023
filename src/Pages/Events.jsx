@@ -1,12 +1,14 @@
-import React from 'react';
-import Eventsbg from './eventsbg';
+import React from "react";
+import EventsComponent from "../Components/Events/EventsComponent";
+import Eventsbg from "./eventsbg";
 
 const Events = () => {
-    return(
-        <div>
-            <Eventsbg />
-        </div>
-    );
-}
+	return (
+		<>
+			{/* <Eventsbg /> */}
+			<EventsComponent />
+		</>
+	);
+};
 
 export default Events;
