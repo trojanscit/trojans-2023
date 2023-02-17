@@ -12,7 +12,7 @@ function Sponsors() {
       </div>
 
       <Tilt options={{ max: 35, transition: true }} className="tilt">
-        <div class="cardsp boxsponsor">
+        <div className="cardsp boxsponsor">
           <span id="span12"></span>
           <div class="card-img">
             <img src={amazon} className="img-spon" />
@@ -21,7 +21,7 @@ function Sponsors() {
             <h2 class="card-title1" data-tilt>
               amazon
             </h2>
-            <p class="card-text">
+            <p className="card-text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Similique qui praesentium minus quidem distinctio, fuga facilis
               voluptatem nisi laudantium perspiciatis, dolorum perferendis nam
@@ -31,7 +31,7 @@ function Sponsors() {
         </div>
       </Tilt>
       <Tilt options={{ max: 35, transition: true }} className="tilt">
-        <div class="cardsp boxsponsor">
+        <div className="cardsp boxsponsor">
           <span id="span12"></span>
           <div class="card-img">
             <img src={amazon} className="img-spon" />
@@ -40,7 +40,7 @@ function Sponsors() {
             <h2 class="card-title1" data-tilt>
               amazon
             </h2>
-            <p class="card-text">
+            <p className="card-text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Similique qui praesentium minus quidem distinctio, fuga facilis
               voluptatem nisi laudantium perspiciatis, dolorum perferendis nam

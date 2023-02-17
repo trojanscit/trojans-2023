@@ -3,7 +3,7 @@ import "../styles/eventStyle.css";
 
 const techEventCard = () => {
   return (
-    <div class="cont" id="tevent1">
+    <div className="cont" id="tevent1">
       <div className="token">
         <div className="main">
           <h2>Event Name 1</h2>

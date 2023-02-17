@@ -12,7 +12,7 @@ function Homepage() {
 
   return (
     <div className="hero-container">
-      <div class="gls-card">
+      <div className="gls-card">
         <img
           src={cit_logo}
           className={cit ? "cit_logo" : "hide cit_logo"}
@@ -53,7 +53,7 @@ function Homepage() {
           </button>
         </div>
       </div>
-      <div class="holo"></div>
+      <div className="holo"></div>
     </div>
   );
 }

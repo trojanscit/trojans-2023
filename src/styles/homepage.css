@@ -52,7 +52,7 @@
   /* animation: float 1s infinite alternate; */
   /* box-shadow: 2px 2px 25px #38e8ff; */
   z-index: 99;
-  overflow-wrap: break-word;
+  /* overflow-wrap: break-word; */
 }
 .logo_round {
   margin: 10px;
