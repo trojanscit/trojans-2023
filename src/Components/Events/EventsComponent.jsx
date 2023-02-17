@@ -1,14 +1,7 @@
 import React from "react";
-
+import Eventsbg from "./eventsbg";
 function EventsComponent() {
-	return (
-		<>
-			<a href="/events/technical">Technical</a>
-			<a href="/events/non-technical">Non Technical</a>
-			<a href="/events/gaming">Gaming</a>
-			<a href="/events/workshop">Workshop</a>
-		</>
-	);
+  return <Eventsbg />;
 }
 
 export default EventsComponent;

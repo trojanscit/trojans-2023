@@ -7,18 +7,18 @@ import Tilt from "react-tilt";
 function Sponsors() {
   return (
     <div className="container8">
-      <div id="sponsor" className="neonText">
-        <h1>OUR SPONSORS</h1>
+      <div class="neonText">
+        <h1 id="sponsors1">OUR SPONSORS</h1>
       </div>
 
       <Tilt options={{ max: 35, transition: true }} className="tilt">
         <div className="cardsp boxsponsor">
           <span id="span12"></span>
-          <div className="card-img">
-            <img src={amazon} />
+          <div class="card-img">
+            <img src={amazon} className="img-spon" />
           </div>
-          <div className="card-body box">
-            <h2 className="card-title" data-tilt>
+          <div class="card-body1 box">
+            <h2 class="card-title1" data-tilt>
               amazon
             </h2>
             <p className="card-text">
@@ -33,11 +33,11 @@ function Sponsors() {
       <Tilt options={{ max: 35, transition: true }} className="tilt">
         <div className="cardsp boxsponsor">
           <span id="span12"></span>
-          <div className="card-img">
-            <img src={amazon} />
+          <div class="card-img">
+            <img src={amazon} className="img-spon" />
           </div>
-          <div className="card-body box">
-            <h2 className="card-title" data-tilt>
+          <div class="card-body1 box">
+            <h2 class="card-title1" data-tilt>
               amazon
             </h2>
             <p className="card-text">

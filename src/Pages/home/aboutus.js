@@ -1,9 +1,9 @@
 import React from "react";
-import "../styles/homepage.css";
+import "../../styles/homepage.css";
 import { useState } from "react";
-import logo_round from "../Assets/Trojans_logo/trojans_logo.webp";
-import cit_logo from "../Assets/Trojans_logo/CIT_Logo_white.webp";
-function Homepage() {
+import logo_round from "../../Assets/Trojans_logo/trojans_logo.webp";
+import cit_logo from "../../Assets/Trojans_logo/CIT_Logo_white.webp";
+function AboutUs() {
   const [cit, setcit] = useState(false);
   const handleClick = () => {
     setcit(!cit);
@@ -21,7 +21,7 @@ function Homepage() {
           className={cit ? "logo_round hide" : "logo_round"}
         ></img>
         <h1 className={cit ? "cit_title" : "tro_title"}>TROJANS</h1>
-        <h2 className="text">
+        <h2 className="text-home">
           {cit ? (
             <div>
               Chennai Institute of Technology (CIT Chennai) is an Industry
@@ -57,4 +57,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default AboutUs;
