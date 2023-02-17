@@ -5,7 +5,7 @@ section {
   background: black;
   display: flex;
   flex-direction: column;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .mouse-container {
   /* position: fixed;

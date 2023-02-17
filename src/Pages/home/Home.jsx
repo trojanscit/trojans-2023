@@ -1,22 +1,22 @@
 import React from "react";
 import Sponsors from "../Sponsors";
 import Hero from "../../Components/Home/Hero";
-import Homepage from "./aboutus";
-import Eventshome from "../eventshome";
-import Herohome from "../Herohome.jsx";
-import Iconsbg from "../iconsbg";
+import Eventshome from "../../Components/Events/eventshome";
+import Herohome from "./Herohome.jsx";
 import ContactUs from "../contactus/ContactUs";
 import Background from "../bghome/background";
-import Demo2 from "../workshop/Workshop";
-// import "../../styles/homepage.css";
+import AboutUs from "./aboutus";
+import Navbar from "../navbar/navbar";
+
 function Home() {
   return (
-    <div className="home">
+    <div>
+      <Navbar />
       <Background />
       {/* <Iconsbg /> */}
-      {/* <Herohome /> */}
+      <Herohome />
       {/* <Demo2 /> */}
-      <Homepage />
+      <AboutUs />
       <Eventshome />
       <ContactUs />
     </div>

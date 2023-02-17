@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/herohome.css";
-import Trojans from "../Assets/Trojans_logo/trojans-compressed.webp";
-import scrol from "../images/scroll.png";
+import "../../styles/herohome.css";
+import Trojans from "../../Assets/Trojans_logo/trojans-compressed.webp";
+import scrol from "../../images/scroll.png";
 
 function Herohome() {
   return (

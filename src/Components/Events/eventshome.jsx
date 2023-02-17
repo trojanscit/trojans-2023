@@ -1,9 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import "../styles/eventshome.css";
-import ImageSwiper from "./imageswiper";
-import ImageSwiper1 from "./imageswiper1";
-import ImageSwiper2 from "./imageswiper1";
+import "../../styles/eventshome.css";
+import ImageSwiper from "../../Pages/imageswiper";
+import ImageSwiper1 from "../../Pages/imageswiper1";
+import ImageSwiper2 from "../../Pages/imageswiper1";
 import { Link } from "react-router-dom";
 function Eventshome() {
   const [poster1, setposter1] = useState(false);

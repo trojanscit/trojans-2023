@@ -1,11 +1,12 @@
 import React from "react";
-import "../styles/eventStyle.css";
-import Tevent1 from "./tevent1";
+import { Link } from "react-router-dom";
+import "../../styles/eventStyle.css";
+import Tevent1 from "../../Pages/tevent1";
 
-function eventsbg() {
+function Eventsbg() {
   return (
     <>
-      <div className=".body">
+      <div>
         {/* technical eventlist */}
         {/* <div className="contain" id="tbox">
       <div className="box" >
@@ -308,7 +309,9 @@ function eventsbg() {
               <div className="future_ui__piece">
                 {/* <a href="#tbox">  */}
                 <span id="spantag">
-                  <div className="txt">Technical</div>
+                  <div className="txt">
+                    <Link to="/events/technical ">Technical</Link>
+                  </div>
                 </span>
                 <div className="line" />
               </div>
@@ -316,7 +319,9 @@ function eventsbg() {
               <div className="future_ui__piece">
                 {/* <a href="#ntbox">  */}
                 <span id="spantag">
-                  <div className="txt">Non Tech</div>
+                  <div className="txt">
+                    <Link to="/events/non-technical">Non Tech</Link>
+                  </div>
                 </span>
                 <div className="line" />
               </div>
@@ -324,14 +329,18 @@ function eventsbg() {
               <div className="future_ui__piece">
                 {/* <a href="#gaming"> */}
                 <span id="spantag">
-                  <div className="txt">Gaming</div>
+                  <div className="txt">
+                    <Link to="/events/gaming">Gaming</Link>
+                  </div>
                 </span>
                 <div className="line" />
               </div>
 
               <div className="future_ui__piece">
                 <span id="spantag">
-                  <div className="txt">Workshop</div>
+                  <div className="txt">
+                    <Link to="events/workshop">Workshop</Link>
+                  </div>
                 </span>
                 <div className="line" />
               </div>
@@ -501,4 +510,4 @@ function eventsbg() {
   );
 }
 
-export default eventsbg;
+export default Eventsbg;

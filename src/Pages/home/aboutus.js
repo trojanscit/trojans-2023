@@ -3,8 +3,7 @@ import "../../styles/homepage.css";
 import { useState } from "react";
 import logo_round from "../../Assets/Trojans_logo/trojans_logo.webp";
 import cit_logo from "../../Assets/Trojans_logo/CIT_Logo_white.webp";
-import Eventshome from "../eventshome";
-function Homepage() {
+function AboutUs() {
   const [cit, setcit] = useState(false);
   const handleClick = () => {
     setcit(!cit);
@@ -58,4 +57,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default AboutUs;
