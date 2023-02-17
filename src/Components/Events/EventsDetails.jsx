@@ -55,7 +55,7 @@ function EventsDetails() {
 						return (
 							<>
 								{popBox ? (
-									<div className="popUpBox">
+									<div className="popUpBoxEvents">
 										<div className="mainBox">
 											<img
 												onClick={() => setPopBox(false)}

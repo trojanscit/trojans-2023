@@ -217,7 +217,7 @@ p {
 	transition: filter 250ms 700ms linear;
 }
 
-.popUpBox {
+.popUpBoxEvents {
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -301,7 +301,7 @@ p {
 		left: 90%;
 	}
 
-	.popUpBox {
+	.popUpBoxEvents {
 		justify-content: flex-start;
 	}
 }
