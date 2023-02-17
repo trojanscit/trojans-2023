@@ -7,18 +7,19 @@ import ContactUs from "../contactus/ContactUs";
 import Background from "../bghome/background";
 import AboutUs from "./aboutus";
 import Navbar from "../navbar/navbar";
+import Footer from "../footer/footer.jsx";
 
 function Home() {
   return (
     <div>
-      <Navbar />
+      <Navbar /> */}
       <Background />
-      {/* <Iconsbg /> */}
       <Herohome />
       {/* <Demo2 /> */}
       <AboutUs />
       <Eventshome />
       <ContactUs />
+      <Footer />
     </div>
   );
 }

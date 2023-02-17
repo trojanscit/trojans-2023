@@ -1,0 +1,227 @@
+.main-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+#queries-foot {
+  font-size: 30px;
+  position: relative;
+  color: white;
+  left: 10%;
+  top: 30px;
+}
+.foot-ul {
+  padding: 10px;
+  position: relative;
+  top: 10%;
+  font-size: 10px;
+  list-style: none;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+  background-color: #24262b;
+  box-shadow: 0 20px #e91e63;
+  z-index: 999999999;
+}
+.footer-col {
+  width: 23%;
+  position: relative;
+  left: 2%;
+  padding: 0 10px;
+}
+.footer-col .foot-heading {
+  font-size: 28px;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col .foot-heading::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 90px;
+}
+.footer-col .foot-ul .foot-row:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col .foot-ul .foot-row .foot-a {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col .foot-ul .foot-row .foot-a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links .foot-a {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links .foot-a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+
+.cpyryt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.tro-logo {
+  padding: 20px;
+}
+
+.foot-logocit {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #24262b;
+    box-shadow: 0 20px #e91e63;
+    z-index: 999999999;
+  }
+
+  .main-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #queries-foot {
+    font-size: 20px;
+    position: relative;
+    color: white;
+    left: 2%;
+    top: 5px;
+  }
+  .foot-ul {
+    padding: 10px;
+    position: relative;
+    top: 10%;
+    font-size: 10px;
+
+    list-style: none;
+  }
+
+  .footer-col {
+    width: 23%;
+    position: relative;
+    left: 35%;
+    padding: 0 10px;
+  }
+  .footer-col .foot-heading {
+    font-size: 28px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col .foot-heading::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 90px;
+  }
+  .connect {
+    font-size: 30px;
+    position: relative;
+    right: 20%;
+    color: white;
+  }
+  .footer-col .foot-ul .foot-row:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .footer-col .foot-ul .foot-row .foot-a {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col .foot-ul .foot-row .foot-a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links .foot-a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links .foot-a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+  }
+
+  /*responsive*/
+
+  .cpyryt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .footer {
+    height: 50%;
+    overflow: scroll;
+  }
+  .footer-col {
+    width: 100%;
+  }
+  .tro-logo {
+    display: none;
+  }
+
+  .foot-logocit {
+    display: none;
+  }
+}

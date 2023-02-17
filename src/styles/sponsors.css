@@ -40,8 +40,9 @@
 }
 #sponsors1 {
   position: absolute;
-  top: 17%;
+  top: 7%;
   left: 40%;
+  background-color: #fff;
   font-size: 46px;
   z-index: 10;
 }

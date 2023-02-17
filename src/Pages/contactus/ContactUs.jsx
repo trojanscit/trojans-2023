@@ -1,5 +1,6 @@
 import React from "react";
 import "./ContactUs.css";
+import { Icon } from "@iconify/react";
 
 function ContactUs() {
   const inputs = document.querySelectorAll(".input");
@@ -45,19 +46,16 @@ function ContactUs() {
             <p className="title">Connect with us :</p>
             <div className="social-icons">
               <a href="#">
-                <i className="fab fa-facebook-f" />
+                <Icon icon="mdi:twitter" style={{ fontSize: "41px" }} />
               </a>
               <a href="#">
-                <i className="fab fa-twitter" />
+                <Icon icon="mdi:youtube" style={{ fontSize: "41px" }} />{" "}
               </a>
               <a href="#">
-                <i className="fab fa-instagram" />
+                <Icon icon="mdi:instagram" style={{ fontSize: "41px" }} />
               </a>
               <a href="#">
-                <i className="fab fa-linkedin-in" />
-              </a>
-              <a href="#">
-                <i className="fab fa-youtube" />
+                <Icon icon="mdi:linkedin" style={{ fontSize: "41px" }} />
               </a>
             </div>
             <br />

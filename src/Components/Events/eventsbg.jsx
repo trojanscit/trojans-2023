@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/eventStyle.css";
-import Tevent1 from "../../Pages/tevent1";
 
 function Eventsbg() {
   return (

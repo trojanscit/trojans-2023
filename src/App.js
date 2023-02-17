@@ -9,6 +9,7 @@ import Eventshome from "./Components/Events/eventshome";
 import "./styles/App.css";
 import Home from "./Pages/home/Home";
 import Navbar from "./Pages/navbar/navbar";
+import Demo2 from "./Pages/workshop/Demo2";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/registration" element={<Registration />}></Route>
           <Route path="/events" element={<Events />}></Route>
           <Route path="/teams" element={<Teams />}></Route>
+          <Route path="/workshop" element={<Demo2 />}></Route>
           <Route path="/events/:eventType" element={<EventsDetails />}></Route>
         </Routes>
       </Router>

@@ -1,9 +1,9 @@
 .nav_container {
   width: 98.9vw;
-  height: 100px;
+  height: 90px;
   position: relative;
 
-  background-color: #fff;
+  background-color: #000000;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
