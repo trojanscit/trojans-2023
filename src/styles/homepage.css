@@ -65,18 +65,19 @@
   visibility: hidden;
 }
 .gls-card.holo {
-  position: absolute;
-  bottom: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
 }
 
 .holo {
-  position: relative;
-  z-index: 1;
+  position: absolute;
+
   width: 490px;
   height: 20px;
-  left: 9px;
+  left: 33%;
   top: 96%;
 
+  z-index: 999;
   margin: -5px auto 0;
   background-color: rgba(0, 252, 252, 0.35);
   border-radius: 100%;
@@ -135,10 +136,10 @@
   }
 }
 
-.text {
+.text-home {
   padding: 0 25px 0 25px;
   letter-spacing: 3px;
-  overflow-wrap: break-word;
+  /* overflow-wrap: break-word; */
   color: white;
   font-size: 30px;
   font-family: sans-serif;
@@ -166,7 +167,8 @@
   .hero-container {
     display: flex;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
+    background-color: black;
   }
   .tro_title {
     width: fit-content;
@@ -287,7 +289,7 @@
         0 -75px 50px rgba(0, 252, 252, 1);
     }
   }
-  .text {
+  .text-home {
     /* padding: 0 20px 0 20px; */
     padding: 0 9px 0 9px;
     letter-spacing: 0.6px;
@@ -306,12 +308,13 @@
     left: 40%;
   }
   #button1 {
-    width: 70px;
-    padding: 1px;
+    width: 100px;
+    padding: 2px;
     font-size: 30px;
-    position: fixed;
+    /* font-weight: ; */
+    position: absolute;
     top: 89%;
-    left: 44%;
+    left: 37%;
     border-radius: 20px;
     border: 0px solid transparent;
     height: fit-content;

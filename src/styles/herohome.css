@@ -1,0 +1,73 @@
+.herohomecontainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+#logo_trojans {
+  justify-content: center;
+  align-items: center;
+  width: 560px;
+  height: 186px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 180px;
+}
+#dept-intro {
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  width: 563px;
+  height: 27px;
+  position: relative;
+  left: 30%;
+  top: 20vh;
+}
+#presents {
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 563px;
+  height: 27px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  left: 13%;
+  top: 23vh;
+}
+#home-intro {
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  width: 563px;
+  height: 27px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  left: 1%;
+  top: 28vh;
+}
+.scroll {
+  position: absolute;
+  top: 85%;
+  left: 48%;
+}
+.scroll_intro {
+  position: relative;
+  left: -43px;
+  color: white;
+  padding: 7px;
+}
+.scroll_img {
+  width: 40px;
+  animation: scrolll;
+  animation-duration: 0.9s;
+  transition: 1s;
+  animation-iteration-count: infinite;
+}
