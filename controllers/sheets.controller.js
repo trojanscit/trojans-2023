@@ -17,7 +17,7 @@ exports.sheetsPost = async (req, res) => {
 
 	const client = await auth.getClient();
 
-	const googleSheets = google.sheets({ version: 'v4', auth: client });
+	const googleSheets = await google.sheets({ version: 'v4', auth: client });
 	await googleSheets.spreadsheets.values
 		.append({
 			auth,
