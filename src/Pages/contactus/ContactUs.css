@@ -74,11 +74,11 @@ form {
   outline: none;
   border: 2px solid #fafafa;
   background: none;
-  padding: 10px 1px;
+  padding: 10px 15px;
   color: #fff;
   margin-bottom: 20px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 0.5px;
   border-radius: 25px;
   transition: 0.3s;
@@ -93,9 +93,9 @@ textarea.input {
   overflow-y: auto;
 }
 
-.input-container label {
+.input-container .ctclbl {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 15px;
   transform: translateY(-50%);
   padding: 0 0.4rem;
@@ -107,7 +107,7 @@ textarea.input {
   transition: 0.5s;
 }
 
-.input-container.textarea label {
+.input-container.textarea .ctclbl {
   top: 1rem;
   transform: translateY(0);
 }
@@ -166,7 +166,7 @@ textarea.input {
   right: 50%;
 }
 
-.input-container.focus label {
+.input-container.focus .ctclbl {
   top: 0;
   transform: translateY(-50%);
   left: 25px;
@@ -210,8 +210,10 @@ textarea.input {
 }
 
 .social-media {
+  position: relative;
   padding: 2rem 0 0 0;
   color: orange;
+  top:40%;
 }
 
 .social-media p {
@@ -224,10 +226,11 @@ textarea.input {
 }
 
 .social-icons a {
+  display:flex;
+  flex-direction: row;
   width: 35px;
   height: 35px;
   border-radius: 5px;
-  background: linear-gradient(45deg, rgb(92, 92, 92), rgb(22, 22, 22));
   color: #fff;
   text-align: center;
   line-height: 35px;
@@ -236,17 +239,10 @@ textarea.input {
 }
 
 .social-icons a:hover {
-  transform: scale(1.05);
+  transform: scale(1.2);
 }
 
-.square {
-  position: absolute;
-  height: 400px;
-  top: 50%;
-  left: 50%;
-  transform: translate(181%, 11%);
-  opacity: 0.2;
-}
+
 
 @media (max-width: 850px) {
   .form {
