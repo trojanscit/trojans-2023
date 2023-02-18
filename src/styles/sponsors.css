@@ -45,6 +45,7 @@
   background-color: #fff;
   font-size: 46px;
   z-index: 10;
+  bottom: 10;
 }
 .neonText {
   animation: flicker 1.5s infinite alternate;
