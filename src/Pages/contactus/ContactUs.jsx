@@ -68,22 +68,22 @@ function ContactUs() {
             <div className="title">Contact us</div>
             <div className="input-container">
               <input type="text" name="name" className="input" />
-              <label htmlFor>Name</label>
+              <label className="ctclbl" htmlFor>Name</label>
               <span>Username</span>
             </div>
             <div className="input-container">
               <input type="email" name="email" className="input" />
-              <label htmlFor>Email</label>
+              <label className="ctclbl" htmlFor>Email</label>
               <span>Email</span>
             </div>
             <div className="input-container">
               <input type="tel" name="phone" className="input" />
-              <label htmlFor>Phone</label>
+              <label className="ctclbl" htmlFor>Phone</label>
               <span>Phone</span>
             </div>
             <div className="input-container textarea">
               <textarea name="message" className="input" defaultValue={""} />
-              <label htmlFor>Message</label>
+              <label className="ctclbl" htmlFor>Message</label>
               <span>Message</span>
             </div>
             <input type="submit" className="btn-cont" />
