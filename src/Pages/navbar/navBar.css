@@ -6,6 +6,7 @@
   left: 0;
   z-index: 90900000000;
   /* background-color: #000000; */
+  width: 100vw;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
@@ -91,11 +92,12 @@
   height: 80px;
   padding: 0;
   margin: 0;
-  /* height: 10; */
   z-index: 9;
   overflow: hidden;
+  color: #383737;
   box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.3);
-  background-color: #aa4e4e;
+  background-color: #565b57;
+  opacity: 100px;
   animation: border-transform 7s linear infinite;
   transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
     right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
