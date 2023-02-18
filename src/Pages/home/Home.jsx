@@ -13,7 +13,7 @@ function Home() {
   return (
     <div>
       <Navbar />
-      {/* <Background /> */}
+      <Background />
       <Herohome />
       {/* <Demo2 /> */}
       <AboutUs />

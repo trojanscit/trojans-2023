@@ -1579,10 +1579,6 @@
 }
 /* --------------------------------media query */
 @media only screen and (max-width: 768px) {
-   {
-    background: black;
-  }
-
   .center .outer_five,
   .center .outer_four,
   .center .outer_three,
@@ -1629,7 +1625,8 @@
     animation: bg-spin 3s linear infinite;
     width: fit-content;
     position: relative;
-    left: 9%;
+    margin-left: auto;
+    margin-right: auto;
   }
   @-webkit-keyframes bg-spin {
     to {
@@ -1657,7 +1654,6 @@
   }
 
   #spantag:hover {
-    box-shadow: 0 0 50px #de0b46 inset;
     color: white;
   }
   #spantag {

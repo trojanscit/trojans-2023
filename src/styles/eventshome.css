@@ -27,7 +27,7 @@
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 0 0 5px hsl(142, 83%, 45%), 0 0 15px hsl(142, 83%, 45%),
-    0 0 30px hsl(142, 83%, 45%), 0 0 60px hsl(142, 83%, 45%);
+    0 0 15px hsl(142, 83%, 45%), 0 0 6px hsl(142, 83%, 45%);
 }
 .card-event-home {
   position: absolute;
@@ -93,7 +93,7 @@
 }
 
 .be {
-  color: #28ea5c;
+  color: #000000;
   /* background-color: red; */
   border-radius: 3%;
   padding: 10px 98px 10px 98px;
@@ -104,10 +104,13 @@
   background: white;
   border: 0px solid transparent;
   width: 350px;
-  text-shadow: 0 0 7px #28ea5c, 0 0 1px #28ea5c, 0 0 2px #28ea5c,
-    0 0 4px #28ea5c, 0 0 2px #28ea5c, 0 0 9px #28ea5c, 0 0 2px #28ea5c,
-    0 0 1px #28ea5c;
-  box-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 30px #fff, 0 0 60px #fff;
+  color: #000000;
+  text-shadow: rgb(188 19 254) 2px 0px 0px, rgb(188 19 254) -2px 0px 0px,
+    rgb(188 19 254) 0px 2px 0px, rgb(188 19 254) 0px -2px 0px,
+    rgb(188 19 254) 1px 1px, rgb(188 19 254) -1px -1px 0px,
+    rgb(188 19 254) 1px -1px 0px, rgb(188 19 254) -1px 1px 0px,
+    rgb(188 19 254) 0px 0px 7px, rgb(188 19 254) 0px 0px 10px,
+    rgb(188 19 254) 0px 0px 21px;
 }
 
 .posters {
@@ -127,7 +130,7 @@
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 0 0 5px hsl(142, 83%, 45%), 0 0 15px hsl(142, 83%, 45%),
-    0 0 30px hsl(142, 83%, 45%), 0 0 60px hsl(142, 83%, 45%);
+    0 0 15px hsl(142, 83%, 45%), 0 0 6px hsl(142, 83%, 45%);
   transform: translateX(-400px);
   transition: 0.6s;
 }
@@ -154,7 +157,7 @@
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 0 0 5px hsl(142, 83%, 45%), 0 0 15px hsl(142, 83%, 45%),
-    0 0 30px hsl(142, 83%, 45%), 0 0 60px hsl(142, 83%, 45%);
+    0 0 15px hsl(142, 83%, 45%), 0 0 6px hsl(142, 83%, 45%);
   transition: 0.3s;
 }
 
@@ -194,6 +197,12 @@
   top: 45%;
   z-index: 99999;
   border: 0px solid transparent;
+  text-shadow: rgb(188 19 254) 2px 0px 0px, rgb(188 19 254) -2px 0px 0px,
+    rgb(188 19 254) 0px 2px 0px, rgb(188 19 254) 0px -2px 0px,
+    rgb(188 19 254) 1px 1px, rgb(188 19 254) -1px -1px 0px,
+    rgb(188 19 254) 1px -1px 0px, rgb(188 19 254) -1px 1px 0px,
+    rgb(188 19 254) 0px 0px 7px, rgb(188 19 254) 0px 0px 10px,
+    rgb(188 19 254) 0px 0px 21px;
 }
 #slider_button_next {
   position: absolute;
@@ -206,6 +215,12 @@
   background: transparent;
   z-index: 99999;
   border: 0px solid transparent;
+  text-shadow: rgb(188 19 254) 2px 0px 0px, rgb(188 19 254) -2px 0px 0px,
+    rgb(188 19 254) 0px 2px 0px, rgb(188 19 254) 0px -2px 0px,
+    rgb(188 19 254) 1px 1px, rgb(188 19 254) -1px -1px 0px,
+    rgb(188 19 254) 1px -1px 0px, rgb(188 19 254) -1px 1px 0px,
+    rgb(188 19 254) 0px 0px 7px, rgb(188 19 254) 0px 0px 10px,
+    rgb(188 19 254) 0px 0px 21px;
 }
 #img_swiper {
   width: 20vw;
@@ -241,14 +256,18 @@
   font-size: 30px;
   border: 0px solid transparent;
   border-radius: 5%;
-  border: solid #de0b46;
-  background-color: #de0b46;
-  box-shadow: 0 0 20px #de0b46;
+  /* border: solid #de0b46; */
+  background-color: #c3ea16;
+  box-shadow: 0 0 20px #a9de0b;
 
   font-family: sans-serif;
   font-weight: bold;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09,
-    0 0 82px #f09, 0 0 92px #f09, 0 0 102px #f09, 0 0 151px #f09;
+  text-shadow: rgb(188 19 254) 2px 0px 0px, rgb(188 19 254) -2px 0px 0px,
+    rgb(188 19 254) 0px 2px 0px, rgb(188 19 254) 0px -2px 0px,
+    rgb(188 19 254) 1px 1px, rgb(188 19 254) -1px -1px 0px,
+    rgb(188 19 254) 1px -1px 0px, rgb(188 19 254) -1px 1px 0px,
+    rgb(188 19 254) 0px 0px 7px, rgb(188 19 254) 0px 0px 10px,
+    rgb(188 19 254) 0px 0px 21px;
 }
 
 @media only screen and (max-width: 767px) {
