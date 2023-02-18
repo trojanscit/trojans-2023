@@ -1,9 +1,11 @@
 .nav_container {
   width: 98.9vw;
   height: 90px;
-  position: relative;
-
-  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90900000000;
+  /* background-color: #000000; */
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
@@ -128,9 +130,14 @@
 
 .menu-icon:checked ~ .nav {
   animation-play-state: paused;
+  /* position: relative; */
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 200%;
   height: 200vh;
   overflow: hidden;
@@ -172,7 +179,7 @@
 
 .pt-5 {
   position: relative;
-  margin-top: 450px;
+  margin-top: 50px;
   padding: 10px;
 }
 .pt-5 .nav-lst {

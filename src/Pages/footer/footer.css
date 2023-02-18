@@ -2,13 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
+  padding: 25px 0;
 }
 #queries-foot {
   font-size: 30px;
   position: relative;
   color: white;
   left: 10%;
-  top: 30px;
+  top: 25px;
 }
 .foot-ul {
   padding: 10px;

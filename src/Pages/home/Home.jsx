@@ -12,8 +12,8 @@ import Footer from "../footer/footer.jsx";
 function Home() {
   return (
     <div>
-      <Navbar /> */}
-      <Background />
+      <Navbar />
+      {/* <Background /> */}
       <Herohome />
       {/* <Demo2 /> */}
       <AboutUs />
