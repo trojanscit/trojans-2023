@@ -1,15 +1,15 @@
 const { google } = require('googleapis');
 
 exports.sheetsPost = async (req, res) => {
+	console.log(req.body);
 	const {
-		name,
+		name, email,
+		phone,
 		department,
-		year,
 		college,
 		eventType,
 		eventName,
 	} = req.body;
-
 	const auth = new google.auth.GoogleAuth({
 		keyFile: './credentials.json',
 		scopes: 'https://www.googleapis.com/auth/spreadsheets'
