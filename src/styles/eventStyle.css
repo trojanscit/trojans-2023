@@ -1,7 +1,68 @@
-@import "eventbg.css";
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap");
 
-/* @import "eventbg.css";
+:root {
+	--primary-color: #00cec9;
+	--bg-color: #dfe6e9;
+	--text-color: white;
+}
 
-@import "eventlist.css";
+.events_main-page {
+	background: #1e1e1e;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 12rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
 
-@import "desccard.css"; */
+.events_main-page .container {
+	background: white;
+	cursor: pointer;
+	border-radius: 15px;
+	position: relative;
+	padding: 25px 30px;
+	color: var(--primary-color);
+	height: 35%;
+	width: 25%;
+	margin: 0 4%;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.events_main-page .container::after {
+	content: "";
+	background: var(--primary-color);
+	border-radius: 15px;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
+	clip-path: circle(10% at 0% 0%);
+	transition: all 0.3s ease-in;
+}
+
+.events_main-page .content {
+	position: relative;
+	z-index: 1;
+	transition: all 0.3s ease-in;
+}
+
+.events_main-page .container:hover::after {
+	clip-path: circle(100%);
+}
+
+.events_main-page .container:hover .content {
+	color: var(--text-color);
+}

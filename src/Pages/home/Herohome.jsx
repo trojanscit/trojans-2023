@@ -7,9 +7,10 @@ import { Link } from "react-router-dom";
 function Herohome() {
   return (
     <div className="herohomecontainer">
-      <h3 id="dept-intro">DEPARTMENT OF INFORMATION TECHNOLOGY</h3>
-      <h3 id="presents"> PRESENTS</h3>
-      <img src={Trojans} id="logo_trojans" />
+      <p className="heroPTag">DEPARTMENT OF</p>
+      <h3 id="dept-intro">INFORMATION TECHNOLOGY</h3>
+      <p className="heroPTag"> PRESENTS</p>
+      <img src={Trojans} id="logo_trojans"  alt=""/>
       <h3 id="home-intro">A NATIONAL LEVEL TECHNICAL SYMPOSIUM</h3>
 
       <Link to="/register" className="register-button-home">
@@ -17,7 +18,7 @@ function Herohome() {
       </Link>
 
       <div className="scroll">
-        <h2 className="scroll_intro">scroll down</h2>
+        <h2 className="scroll_intro">SCROLL DOWN</h2>
         <img src={scrol} alt="" className="scroll_img"></img>
       </div>
     </div>

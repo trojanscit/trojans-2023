@@ -3,60 +3,55 @@ import "../styles/sponsors.css";
 import amazon from "../images/amazon.jpg";
 import backgrdvdo from "../images/backgroundvideo.mp4";
 import Tilt from "react-tilt";
+import Navbar from "./navbar/navbar";
 
 function Sponsors() {
-  return (
-    <div className="container8">
-      <div class="neonText">
-        <h1 id="sponsors1">OUR SPONSORS</h1>
-      </div>
-
-      <Tilt options={{ max: 35, transition: true }} className="tilt">
-        <div className="cardsp boxsponsor">
-          <span id="span12"></span>
-          <div class="card-img">
-            <img src={amazon} className="img-spon" />
-          </div>
-          <div class="card-body1 box">
-            <h2 class="card-title1" data-tilt>
-              amazon
-            </h2>
-            <p className="card-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Similique qui praesentium minus quidem distinctio, fuga facilis
-              voluptatem nisi laudantium perspiciatis, dolorum perferendis nam
-              quod? Accusamus.
-            </p>
-          </div>
-        </div>
-      </Tilt>
-      <Tilt options={{ max: 35, transition: true }} className="tilt">
-        <div className="cardsp boxsponsor">
-          <span id="span12"></span>
-          <div class="card-img">
-            <img src={amazon} className="img-spon" />
-          </div>
-          <div class="card-body1 box">
-            <h2 class="card-title1" data-tilt>
-              amazon
-            </h2>
-            <p className="card-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Similique qui praesentium minus quidem distinctio, fuga facilis
-              voluptatem nisi laudantium perspiciatis, dolorum perferendis nam
-              quod? Accusamus.
-            </p>
-          </div>
-        </div>
-      </Tilt>
-
-      <div>
-        <video autoPlay loop muted id="videoback">
-          <source src={backgrdvdo} type="video/mp4" />
-        </video>
-      </div>
-    </div>
-  );
+	return (
+		<>
+			<Navbar />
+			<div className="container8">
+				<div class="neonText">
+					<h1 id="sponsors1">OUR SPONSORS</h1>
+				</div>
+				<div
+					style={{
+						display: "flex",
+						flexDirection: "row",
+						flexWrap: "wrap",
+						justifyContent: "center",
+						alignItems: "center",
+					}}
+				>
+					<Tilt
+						options={{max: 30, transition: true}}
+						className="tilt"
+					>
+						<div
+							className="cardsp boxsponsor"
+							style={{
+								background: `url(${amazon})center/contain no-repeat`,
+							}}
+						>
+							<span id="span12"></span>
+						</div>
+					</Tilt>
+					<Tilt
+						options={{max: 30, transition: true}}
+						className="tilt"
+					>
+						<div
+							className="cardsp boxsponsor"
+							style={{
+								background: `url(${amazon})center/contain no-repeat`,
+							}}
+						>
+							<span id="span12"></span>
+						</div>
+					</Tilt>
+				</div>
+			</div>
+		</>
+	);
 }
 
 export default Sponsors;

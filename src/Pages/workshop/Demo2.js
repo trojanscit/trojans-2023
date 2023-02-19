@@ -3,6 +3,7 @@ import "./Demo2.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Navbar from "../navbar/navbar";
 import {useState} from "react";
+import Footer from "../footer/footer";
 // import workshopimage1 from "./imgvds/mbg4.jpg";
 
 // library.add(fab, fas);
@@ -14,28 +15,23 @@ function Demo2() {
 
 	const workshopList = [
 		{
-			workshopTitle: "workshop 1",
-			image_url: "https://cdn-icons-png.flaticon.com/512/1160/1160358.png",
-			description:
-				"1Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo   fugiat aspernatur alias corporis?",
-			full_description:
-				"1Hello1 Everyone Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo   fugiat aspernatur alias corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo   fugiat aspernatur alias corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo   fugiat aspernatur alias corporis?",
+			workshopTitle: "Workshop 1",
+			image_url:
+				"https://cdn-icons-png.flaticon.com/512/1160/1160358.png",
+			price: 100,
+			organizer: "Hello Everyone",
 		},
 		{
-			workshopTitle: "workshop 1",
+			workshopTitle: "Workshop 1",
 			image_url: "",
-			description:
-				"2Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo   fugiat aspernatur alias corporis?",
-			full_description:
-				"2Hello2 Everyone Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo   fugiat aspernatur alias corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo   fugiat aspernatur alias corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo   fugiat aspernatur alias corporis?",
+			price: 100,
+			organizer: "Hello Everyone",
 		},
 		{
-			workshopTitle: "workshop 1",
+			workshopTitle: "Workshop 1",
 			image_url: "",
-			description:
-				"3Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo   fugiat aspernatur alias corporis?",
-			full_description:
-				"3Hello3 Everyone Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo   fugiat aspernatur alias corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo   fugiat aspernatur alias corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo   fugiat aspernatur alias corporis?",
+			price: 100,
+			organizer: "Hello Everyone",
 		},
 	];
 
@@ -67,7 +63,6 @@ function Demo2() {
 						<>
 							<div className="Workshop-card ">
 								<div className="face face1 ">
-									{/* <span></span> */}
 									<div className="content-face1">
 										<img
 											src={workshop.image_url}
@@ -75,39 +70,27 @@ function Demo2() {
 											width="100px"
 											alt=""
 										/>
-										<h3 id="logo-heading">
-											{workshopList.workshopTitle}
-										</h3>
 									</div>
 								</div>
 								<div className="face face2">
 									<div className="content-face2">
+										<h3 id="logo-heading">
+											{workshop.workshopTitle}
+										</h3>
 										<p id="face2-para">
-											{workshop.description}
+											Entry Fees : {workshop.price}
 										</p>
-										<button
-											className="custom-btn btn-12"
-											onClick={handle}
-										>
-											READ MORE
-										</button>
+										<p id="face2-para">
+											{workshop.organizer}
+										</p>
 									</div>
 								</div>
 							</div>
-							{open ? (
-								<div className="pop1">
-									<button onClick={handle} id="ws-close">
-										X
-									</button>
-									<p id="pop1-para">
-										{workshop.full_description}
-									</p>
-								</div>
-							) : null}
 						</>
 					);
 				})}
 			</div>
+			<Footer />
 		</>
 	);
 }

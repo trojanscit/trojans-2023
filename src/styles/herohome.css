@@ -1,161 +1,173 @@
 .herohomecontainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* centers items vertically */
-  align-items: center; /* centers items horizontally */
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* centers items vertically */
+	align-items: center; /* centers items horizontally */
 
-  width: 100%;
-  height: 100vh;
+	width: 100%;
+	height: 100vh;
 }
+
+.heroPTag {
+	position: relative;
+	font-size: 22px;
+	color: #fff;
+}
+
 .register-button-home {
-  color: rgb(0, 0, 0);
-  background-color: greenyellow;
-  position: relative;
-  top: 20px;
-  padding: 4px;
-  font-size: 20px;
-  border: none;
-  border-radius: 3%;
-  z-index: 9;
-  box-shadow: 0 0 120px rgb(21, 221, 41);
+	color: rgb(0, 0, 0);
+	background-color: #b89420;
+	position: relative;
+	top: 20px;
+	padding: 4px 13px;
+	font-size: 20px;
+	border: none;
+	border-radius: 10px;
+	z-index: 9;
+	box-shadow: 0 0 120px #b89420;
 }
 #logo_trojans {
-  width: 560px;
-  height: 186px;
-  position: relative;
-  bottom: 5%;
+	width: 560px;
+	height: 186px;
+	position: relative;
+	/* bottom: 5%; */
 }
 #dept-intro {
-  color: aliceblue;
+	color: aliceblue;
 
-  font-size: 40px;
+	font-size: 40px;
 
-  position: relative;
-  bottom: 2%;
+	position: relative;
+	/* bottom: 2%; */
 }
 #presents {
-  color: aliceblue;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  position: relative;
-  bottom: 3%;
+	color: aliceblue;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
+	position: relative;
+	bottom: 3%;
 }
 #home-intro {
-  color: aliceblue;
+	color: aliceblue;
 
-  font-size: 26px;
+	font-size: 26px;
 
-  position: relative;
-  bottom: 2%;
-  left: 1%;
+	position: relative;
+	bottom: 2%;
+	left: 1%;
 }
 .scroll {
-  position: relative;
-  top: 7%;
-  font-size: 30px;
+	position: relative;
+	top: 7%;
+	font-size: 30px;
 }
 .scroll_intro {
-  position: relative;
-  font-size: 30px;
-  color: white;
-  padding: 7px;
+	position: relative;
+	font-size: 25px;
+	color: white;
+	padding: 7px;
+	font-weight: 100;
 }
 .scroll_img {
-  width: 50px;
-  position: relative;
-  left: 35%;
-  animation: scrolll;
-  animation-duration: 0.9s;
-  transition: 1s;
-  animation-iteration-count: infinite;
+	width: 50px;
+	position: relative;
+	left: 35%;
+	animation: scrolll;
+	animation-duration: 0.9s;
+	transition: 1s;
+	animation-iteration-count: infinite;
 }
 
 @keyframes scrolll {
-  from {
-    transform: translatey(10px);
-  }
+	from {
+		transform: translatey(10px);
+	}
 }
 
 @media only screen and (max-width: 767px) {
-  .herohomecontainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* centers items vertically */
-    align-items: center; /* centers items horizontally */
-    width: 100%;
-    height: 100vh;
-  }
-  .register-button-home {
-    color: rgb(0, 0, 0);
-    background-color: greenyellow;
-    position: relative;
-    top: 17%;
-    padding: 4px;
-    font-size: 20px;
-    border: none;
-    border-radius: 3%;
-    z-index: 9;
-    text-decoration: none;
-    box-shadow: 0 0 120px rgb(21, 221, 41);
-  }
-  #logo_trojans {
-    width: 290px;
-    height: 90px;
-    position: relative;
-    top: 5%;
-  }
-  #dept-intro {
-    color: aliceblue;
+	.herohomecontainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center; /* centers items vertically */
+		align-items: center; /* centers items horizontally */
+		width: 100%;
+		height: 100vh;
+	}
+	.register-button-home {
+		color: rgb(0, 0, 0);
+		background-color: greenyellow;
+		position: relative;
+		top: 17%;
+		padding: 4px;
+		font-size: 20px;
+		border: none;
+		border-radius: 3%;
+		z-index: 9;
+		text-decoration: none;
+		box-shadow: 0 0 120px rgb(21, 221, 41);
+	}
+	#logo_trojans {
+		width: 290px;
+		height: 90px;
+		position: relative;
+		top: 5%;
+	}
+	#dept-intro {
+		color: aliceblue;
 
-    font-size: 15px;
+		font-size: 20px;
 
-    position: relative;
-    bottom: 0%;
-  }
-  #presents {
-    color: aliceblue;
-    justify-content: center;
-    align-items: center;
-    font-size: 19px;
-    position: relative;
-    top: 2%;
-  }
-  #home-intro {
-    color: aliceblue;
+		position: relative;
+		bottom: 0%;
+	}
 
-    font-size: 16px;
+	.heroPTag {
+		font-size: 18px;
+	}
+	#presents {
+		color: aliceblue;
+		justify-content: center;
+		align-items: center;
+		font-size: 19px;
+		position: relative;
+		top: 2%;
+	}
+	#home-intro {
+		color: aliceblue;
 
-    position: relative;
-    /* bottom: 2%; */
-    top: 10%;
-    left: 1%;
-  }
-  .scroll {
-    position: relative;
-    top: 20%;
-    /* font-size: 10px; */
-  }
-  .scroll_intro {
-    position: relative;
-    font-size: 20px;
-    color: white;
-    padding: 7px;
-  }
-  .scroll_img {
-    width: 50px;
-    position: relative;
-    top: 10px;
-    /* left: 35%; */
-    animation: scrolll;
-    animation-duration: 0.9s;
-    transition: 1s;
-    animation-iteration-count: infinite;
-  }
+		font-size: 16px;
 
-  @keyframes scrolll {
-    from {
-      transform: translatey(10px);
-    }
-  }
+		position: relative;
+		/* bottom: 2%; */
+		top: 10%;
+		left: 1%;
+	}
+	.scroll {
+		position: relative;
+		top: 20%;
+		/* font-size: 10px; */
+	}
+	.scroll_intro {
+		position: relative;
+		font-size: 20px;
+		color: white;
+		padding: 7px;
+	}
+	.scroll_img {
+		width: 50px;
+		position: relative;
+		top: 10px;
+		/* left: 35%; */
+		animation: scrolll;
+		animation-duration: 0.9s;
+		transition: 1s;
+		animation-iteration-count: infinite;
+	}
+
+	@keyframes scrolll {
+		from {
+			transform: translatey(10px);
+		}
+	}
 }

@@ -4,47 +4,46 @@ import "../../styles/eventsMainPage.css";
 
 function EventsDetails() {
 	const {eventType} = useParams("non-technical");
-
 	const [popBox, setPopBox] = useState(false);
 
 	const allTeams = [
 		{
 			event_name: "Coders Chemistry ",
 			event_description: `
-      A single team must consist of 2 members
-      •	The overall competition consists of three rounds. <br/>
-      •	Each round is fifteen minutes long.
-      •	When the event begins, one person will begin coding while the other is absent.  After 3 minutes, the second person will pick up where the first left off.
-      •	The first round involves reverse coding. Teams will be given an input and output format and will be expected to code for it.
-      •	The second round is shortest code, where the code's efficiency is evaluated.  The efficient code will score higher marks
-      •	The fastest code is used in the third round. The teams that solve the problem the fastest will receive higher marks.
-      •	Between each round, a team will be eliminated.
-      `,
+				A single team must consist of 2 members
+				•	The overall competition consists of three rounds. <br/>
+				•	Each round is fifteen minutes long.
+				•	When the event begins, one person will begin coding while the other is absent.  After 3 minutes, the second person will pick up where the first left off.
+				•	The first round involves reverse coding. Teams will be given an input and output format and will be expected to code for it.
+				•	The second round is shortest code, where the code's efficiency is evaluated.  The efficient code will score higher marks
+				•	The fastest code is used in the third round. The teams that solve the problem the fastest will receive higher marks.
+				•	Between each round, a team will be eliminated.
+				`,
 			event_coordinators: `
-      	Abii Aravindh R - 9360051435
-      	Hariprasad R - 75501 60349
-      	KavyaDharshini S - 99440 98100      
-      `,
+					Abii Aravindh R - 9360051435
+					Hariprasad R - 75501 60349
+					KavyaDharshini S - 99440 98100      
+				`,
 			event_photo: "https://assets.codepen.io/1462889/sl1.jpg",
 			event_type: "technical",
 		},
 		{
 			event_name: "Chemistry ",
 			event_description: `
-      A single team must consist of 2 members
-      •	The overall competition consists of three rounds. <br/>
-      •	Each round is fifteen minutes long.
-      •	When the event begins, one person will begin coding while the other is absent.  After 3 minutes, the second person will pick up where the first left off.
-      •	The first round involves reverse coding. Teams will be given an input and output format and will be expected to code for it.
-      •	The second round is shortest code, where the code's efficiency is evaluated.  The efficient code will score higher marks
-      •	The fastest code is used in the third round. The teams that solve the problem the fastest will receive higher marks.
-      •	Between each round, a team will be eliminated.
-      `,
+				A single team must consist of 2 members
+				•	The overall competition consists of three rounds. <br/>
+				•	Each round is fifteen minutes long.
+				•	When the event begins, one person will begin coding while the other is absent.  After 3 minutes, the second person will pick up where the first left off.
+				•	The first round involves reverse coding. Teams will be given an input and output format and will be expected to code for it.
+				•	The second round is shortest code, where the code's efficiency is evaluated.  The efficient code will score higher marks
+				•	The fastest code is used in the third round. The teams that solve the problem the fastest will receive higher marks.
+				•	Between each round, a team will be eliminated.
+				`,
 			event_coordinators: `
-      	Abii Aravindh R - 9360051435
-      	Hariprasad R - 75501 60349
-      	KavyaDharshini S - 99440 98100      
-      `,
+					Abii Aravindh R - 9360051435
+					Hariprasad R - 75501 60349
+					KavyaDharshini S - 99440 98100      
+				`,
 			event_photo: "https://assets.codepen.io/1462889/sl1.jpg",
 			event_type: "non-technical",
 		},

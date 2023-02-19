@@ -1,97 +1,92 @@
 import React from "react";
 import "./ContactUs.css";
-import { Icon } from "@iconify/react";
+import {Icon} from "@iconify/react";
 
 function ContactUs() {
-  const inputs = document.querySelectorAll(".input");
+	const inputs = document.querySelectorAll(".input");
 
-  function focusFunc() {
-    let parent = this.parentNode;
-    parent.classList.add("focus");
-  }
+	function focusFunc() {
+		let parent = this.parentNode;
+		parent.classList.add("focus");
+	}
 
-  function blurFunc() {
-    let parent = this.parentNode;
-    if (this.value == "") {
-      parent.classList.remove("focus");
-    }
-  }
+	function blurFunc() {
+		let parent = this.parentNode;
+		if (this.value == "") {
+			parent.classList.remove("focus");
+		}
+	}
 
-  inputs.forEach((input) => {
-    input.addEventListener("focus", focusFunc);
-    input.addEventListener("blur", blurFunc);
-  });
-  return (
-    <div className="container-contact">
-      <div className="form">
-        <div className="contact-info">
-          <div className="title">Curious to know more about us?</div>
-          <h3 className="title">Let's Get in Touch</h3>
-          <p className="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            dolorum adipisci recusandae praesentium dicta!
-          </p>
-          <div className="info">
-            <div className="information-contact">
-              <p>92 Cherry Drive Uniondale, NY 11553</p>
-            </div>
-            <div className="information-contact">
-              <p>lorem@ipsum.com</p>
-            </div>
-            <div className="information-contact">
-              <p>123-456-789</p>
-            </div>
-          </div>
-          <div className="social-media">
-            <p className="title">Connect with us :</p>
-            <div className="social-icons">
-              <a href="#">
-                <Icon icon="mdi:twitter" style={{ fontSize: "41px" }} />
-              </a>
-              <a href="#">
-                <Icon icon="mdi:youtube" style={{ fontSize: "41px" }} />{" "}
-              </a>
-              <a href="#">
-                <Icon icon="mdi:instagram" style={{ fontSize: "41px" }} />
-              </a>
-              <a href="#">
-                <Icon icon="mdi:linkedin" style={{ fontSize: "41px" }} />
-              </a>
-            </div>
-            <br />
-          </div>
-        </div>
-        <div className="contact-form">
-          <span className="circle one" />
-          <span className="circle two" />
-          <form action="index.html" autoComplete="off">
-            <div className="title">Contact us</div>
-            <div className="input-container">
-              <input type="text" name="name" className="input" />
-              <label className="ctclbl" htmlFor>Name</label>
-              <span>Username</span>
-            </div>
-            <div className="input-container">
-              <input type="email" name="email" className="input" />
-              <label className="ctclbl" htmlFor>Email</label>
-              <span>Email</span>
-            </div>
-            <div className="input-container">
-              <input type="tel" name="phone" className="input" />
-              <label className="ctclbl" htmlFor>Phone</label>
-              <span>Phone</span>
-            </div>
-            <div className="input-container textarea">
-              <textarea name="message" className="input" defaultValue={""} />
-              <label className="ctclbl" htmlFor>Message</label>
-              <span>Message</span>
-            </div>
-            <input type="submit" className="btn-cont" />
-          </form>
-        </div>
-      </div>
-    </div>
-  );
+	inputs.forEach((input) => {
+		input.addEventListener("focus", focusFunc);
+		input.addEventListener("blur", blurFunc);
+	});
+	return (
+		<>
+			<section id="contact1">
+				<div class="contact-box1">
+					<div class="contact-links1">
+						<h2>CONTACT</h2>
+						<div class="links1">
+							<div class="link1">
+								<a href="$">
+									<img
+										src="https://i.postimg.cc/m2mg2Hjm/linkedin.png"
+										alt="linkedin"
+									/>
+								</a>
+							</div>
+							<div class="link1">
+								<a href="$">
+									<img
+										src="https://i.postimg.cc/YCV2QBJg/github.png"
+										alt="github"
+									/>
+								</a>
+							</div>
+							<div class="link1">
+								<a href="$">
+									<img
+										src="https://i.postimg.cc/W4Znvrry/codepen.png"
+										alt="codepen"
+									/>
+								</a>
+							</div>
+							<div class="link1">
+								<a href="$">
+									<img
+										src="https://i.postimg.cc/NjLfyjPB/email.png"
+										alt="email"
+									/>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="contact-form-wrapper1">
+						<form>
+							<div class="form-item1">
+								<input type="text" name="sender" required />
+								<label>Name:</label>
+							</div>
+							<div class="form-item1">
+								<input type="text" name="email" required />
+								<label>Email:</label>
+							</div>
+							<div class="form-item1">
+								<textarea
+									class=""
+									name="message"
+									required
+								></textarea>
+								<label>Message:</label>
+							</div>
+							<button class="submit-btn1">Send</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</>
+	);
 }
 
 export default ContactUs;
