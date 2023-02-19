@@ -1,6 +1,6 @@
 import React from "react";
-import Sponsors from "../Sponsors";
-import Hero from "../../Components/Home/Hero";
+// import Sponsors from "../Sponsors";
+// import Hero from "../../Components/Home/Hero";
 import Eventshome from "../../Components/Events/eventshome";
 import Herohome from "./Herohome.jsx";
 import ContactUs from "../contactus/ContactUs";
