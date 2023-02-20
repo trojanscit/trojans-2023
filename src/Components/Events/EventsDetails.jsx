@@ -52,7 +52,8 @@ function EventsDetails() {
 	  	Vishal R K - 95661 89750
 		   
       `,
-			event_photo: "https://img.freepik.com/vetores-gratis/participantes-felizes-jogando-um-jogo-de-perguntas-no-programa-de-tv-host-com-microfone-fazendo-perguntas_74855-10770.jpg?w=2000",
+			event_photo:
+				"https://img.freepik.com/vetores-gratis/participantes-felizes-jogando-um-jogo-de-perguntas-no-programa-de-tv-host-com-microfone-fazendo-perguntas_74855-10770.jpg?w=2000",
 			event_type: "technical",
 		},
 		{
@@ -80,7 +81,8 @@ function EventsDetails() {
 	  	Abishua Bezalel Raj J - 99621 67469
 		  
       `,
-			event_photo: "https://img.freepik.com/premium-vector/happy-cute-kid-girl-listen-good-music_97632-1517.jpg?w=2000",
+			event_photo:
+				"https://img.freepik.com/premium-vector/happy-cute-kid-girl-listen-good-music_97632-1517.jpg?w=2000",
 			event_type: "technical",
 		},
 		{
@@ -96,7 +98,8 @@ function EventsDetails() {
 	  	Pavan Kalyan D - 99405 74161
 		  
       `,
-			event_photo: "https://img.freepik.com/free-vector/hand-drawn-flat-design-treasure-hunt_23-2149318676.jpg?w=2000",
+			event_photo:
+				"https://img.freepik.com/free-vector/hand-drawn-flat-design-treasure-hunt_23-2149318676.jpg?w=2000",
 			event_type: "technical",
 		},
 		{
@@ -127,7 +130,8 @@ Round III:
 	  	Naveen R - 95661 92553
 		   
       `,
-			event_photo: "https://previews.123rf.com/images/yupiramos/yupiramos1802/yupiramos180213789/95503632-4-%EC%A1%B0%EA%B0%81-%ED%8D%BC%EC%A6%90-%ED%8D%BC%EC%A6%90-%EA%B2%8C%EC%9E%84-%EC%9A%94%EC%86%8C-%EB%B2%A1%ED%84%B0-%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%93%9C%EB%A1%9C%EC%9E%89-%EC%BB%AC%EB%9F%AC-%EB%94%94%EC%9E%90%EC%9D%B8.jpg",
+			event_photo:
+				"https://previews.123rf.com/images/yupiramos/yupiramos1802/yupiramos180213789/95503632-4-%EC%A1%B0%EA%B0%81-%ED%8D%BC%EC%A6%90-%ED%8D%BC%EC%A6%90-%EA%B2%8C%EC%9E%84-%EC%9A%94%EC%86%8C-%EB%B2%A1%ED%84%B0-%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%93%9C%EB%A1%9C%EC%9E%89-%EC%BB%AC%EB%9F%AC-%EB%94%94%EC%9E%90%EC%9D%B8.jpg",
 			event_type: "technical",
 		},
 		{
@@ -146,7 +150,8 @@ in the event. No refunds will be provided.
 			event_coordinators: `
 	  	Pawan Kalyan B - 93453 55391     
       `,
-			event_photo: "https://img.freepik.com/premium-vector/businessman-presenting-marketing-data-projector-screen_181870-99.jpg",
+			event_photo:
+				"https://img.freepik.com/premium-vector/businessman-presenting-marketing-data-projector-screen_181870-99.jpg",
 			event_type: "technical",
 		},
 		{
@@ -185,7 +190,8 @@ in the event. No refunds will be provided.
 GOKUL – 9345333651
     
       `,
-			event_photo: "https://img.freepik.com/premium-vector/cute-photographer-cartoon-illustration-people-profession-icon-concept_138676-1899.jpg?w=2000",
+			event_photo:
+				"https://img.freepik.com/premium-vector/cute-photographer-cartoon-illustration-people-profession-icon-concept_138676-1899.jpg?w=2000",
 			event_type: "non-technical",
 		},
 		{
@@ -204,7 +210,8 @@ GOKUL – 9345333651
 	  
     
       `,
-			event_photo: "https://t3.ftcdn.net/jpg/02/51/77/16/360_F_251771624_ftG5JHQ6PWZ4XdmSJDz7Cljbf3tqq2ML.jpg",
+			event_photo:
+				"https://t3.ftcdn.net/jpg/02/51/77/16/360_F_251771624_ftG5JHQ6PWZ4XdmSJDz7Cljbf3tqq2ML.jpg",
 			event_type: "non-technical",
 		},
 		{
@@ -224,7 +231,8 @@ GOKUL – 9345333651
 	  
     
       `,
-			event_photo: "https://media.istockphoto.com/id/1253311725/vector/a-broken-ship-in-the-sea-vector-illustration-in-cartoon-style.jpg?s=612x612&w=0&k=20&c=OCxA1wLSEY76SGFQeGj3oGQP02i-qiNmq86RelpAf80=",
+			event_photo:
+				"https://media.istockphoto.com/id/1253311725/vector/a-broken-ship-in-the-sea-vector-illustration-in-cartoon-style.jpg?s=612x612&w=0&k=20&c=OCxA1wLSEY76SGFQeGj3oGQP02i-qiNmq86RelpAf80=",
 			event_type: "non-technical",
 		},
 		{
@@ -243,7 +251,8 @@ GOKUL – 9345333651
 	  
     
       `,
-			event_photo: "https://img.freepik.com/premium-vector/batsman-playing-cricket-sports-with-ball-stick-flat-cartoon-field-background-illustration_2175-5949.jpg?w=2000",
+			event_photo:
+				"https://img.freepik.com/premium-vector/batsman-playing-cricket-sports-with-ball-stick-flat-cartoon-field-background-illustration_2175-5949.jpg?w=2000",
 			event_type: "non-technical",
 		},
 		{
@@ -272,7 +281,8 @@ RULES FOR COMIC QUIZ
 	  
     
       `,
-			event_photo: "https://images.thedirect.com/media/article_full/who-are-the-winners-and-losers-for-marvel-and-dc-in-2022_who-are-the-winner_Ryu1qXx.jpg",
+			event_photo:
+				"https://images.thedirect.com/media/article_full/who-are-the-winners-and-losers-for-marvel-and-dc-in-2022_who-are-the-winner_Ryu1qXx.jpg",
 			event_type: "non-technical",
 		},
 		{
@@ -287,7 +297,8 @@ RULES FOR COMIC QUIZ
 			event_coordinators: `
       GHOUSHIK – 8220140665
 MUJAMMIL – 8681039888      `,
-			event_photo: "https://static.vecteezy.com/system/resources/previews/003/692/529/original/cute-squid-game-cartoon-character-illustration-free-vector.jpg",
+			event_photo:
+				"https://static.vecteezy.com/system/resources/previews/003/692/529/original/cute-squid-game-cartoon-character-illustration-free-vector.jpg",
 			event_type: "non-technical",
 		},
 		{
@@ -306,7 +317,8 @@ MUJAMMIL – 8681039888      `,
 	  
     
       `,
-			event_photo: "https://st4.depositphotos.com/7874342/24243/v/450/depositphotos_242439692-stock-illustration-happy-man-claps-his-hands.jpg",
+			event_photo:
+				"https://st4.depositphotos.com/7874342/24243/v/450/depositphotos_242439692-stock-illustration-happy-man-claps-his-hands.jpg",
 			event_type: "non-technical",
 		},
 	];

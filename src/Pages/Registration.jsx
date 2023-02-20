@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from "react";
+import React, {useState, useRef} from "react";
 import "../styles/registration.css";
 import Navbar from "./navbar/navbar";
 import Footer from "./footer/footer";
@@ -8,19 +8,13 @@ import {Helmet} from "react-helmet";
 
 function Registration() {
 	const [eventType, setEventType] = useState("Technical");
-	// const [data, setData] = useState([]);
 
 	const name = useRef("");
 	const email = useRef("");
 	const phone = useRef("");
 	const college = useRef("");
-
-	// const events = [];
-	// useEffect(() => {
-	// 	if (eventType === "technical") {
-	// 		setData(events.filter((eventType = "technical")));
-	// 	}
-	// });
+	const department = useRef("");
+	const year = useRef("");
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
@@ -29,6 +23,8 @@ function Registration() {
 			email.current.value,
 			phone.current.value,
 			college.current.value,
+			department.current.value,
+			year.current.value,
 			eventType
 		);
 	};
@@ -76,6 +72,15 @@ function Registration() {
 								/>
 							</div>
 							<div class="input__box">
+								<span class="details">Year</span>
+								<input
+									type="text"
+									placeholder="1st year"
+									required
+									ref={college}
+								/>
+							</div>
+							<div class="input__box">
 								<span class="details">College Name</span>
 								<input
 									type="text"
@@ -109,13 +114,29 @@ function Registration() {
 										setEventType(e.target.value);
 										console.log(eventType);
 									}}
+									defaultValue="Select"
 								>
-									<option value="technical">Technical</option>
-									<option value="non-technical">
-										Non Technical
+									<option value="Select">
+										Select any option
 									</option>
-									<option value="gaming">Gaming</option>
-									<option value="workshop">Workshop</option>
+									<option value="Coders Chemistry">
+										Coders Chemistry
+									</option>
+									<option value="CLEVER BOT">
+										CLEVER BOT
+									</option>
+									<option value="Rhythm Rivalry">
+										Rhythm Rivalry
+									</option>
+									<option value="The Hunt For The Hidden">
+										The Hunt For The Hidden
+									</option>
+									<option value="Code Jigsaw">
+										Code Jigsaw
+									</option>
+									<option value="FinalDraft">
+										FinalDraft
+									</option>
 								</select>
 							</div>
 							<div class="input__box">
@@ -127,13 +148,28 @@ function Registration() {
 										setEventType(e.target.value);
 										console.log(eventType);
 									}}
+									defaultValue="Select"
 								>
-									<option value="technical">Technical</option>
-									<option value="non-technical">
-										Non Technical
+									<option value="Select">
+										Select any option
 									</option>
-									<option value="gaming">Gaming</option>
-									<option value="workshop">Workshop</option>
+									<option value="SHUTTER STOP">
+										SHUTTER STOP
+									</option>
+									<option value="TALENTRON">TALENTRON</option>
+									<option value="SHIP WRECK">
+										SHIP WRECK
+									</option>
+									<option value="GULLY CRICKET">
+										GULLY CRICKET
+									</option>
+									<option value="COMIC QUIZ">
+										COMIC QUIZ
+									</option>
+									<option value="SQUID GAME">
+										SQUID GAME
+									</option>
+									<option value="OKAY FINE">OKAY FINE</option>
 								</select>
 							</div>
 							<div class="input__box">
