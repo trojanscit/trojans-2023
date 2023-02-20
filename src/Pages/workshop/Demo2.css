@@ -120,6 +120,7 @@
 .Workshop-container {
   /* width: 1000px; */
   position: relative;
+  bottom: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
