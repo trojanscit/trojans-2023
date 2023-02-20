@@ -4,6 +4,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Navbar from "../navbar/navbar";
 import {useState} from "react";
 import Footer from "../footer/footer";
+import {Helmet} from "react-helmet"
 // import workshopimage1 from "./imgvds/mbg4.jpg";
 
 // library.add(fab, fas);
@@ -37,6 +38,9 @@ function Demo2() {
 
 	return (
 		<>
+			<Helmet>
+				<title>Workshop | Trojans</title>
+			</Helmet>
 			<Navbar />
 			<div className="work-bg">
 				<div class="wrapper">

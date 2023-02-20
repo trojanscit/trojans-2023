@@ -2,10 +2,14 @@ import React from "react";
 import "../../styles/eventStyle.css";
 import Navbar from "../../Pages/navbar/navbar";
 import Footer from "../../Pages/footer/footer";
+import { Helmet } from "react-helmet";
 
 function eventsbg() {
 	return (
 		<>
+		<Helmet>
+				<title>Events | Trojans</title>
+			</Helmet>
 			<Navbar />
 			<div className="events_main-page">
 				<a class="container" href="/events/technical">
