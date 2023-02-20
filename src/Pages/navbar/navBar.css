@@ -96,7 +96,7 @@
   overflow: hidden;
   color: #383737;
   box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.3);
-  background-color: #565b57;
+  background-color: #3c3e3d;
   opacity: 100px;
   animation: border-transform 7s linear infinite;
   transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
@@ -163,7 +163,7 @@
     font-size: 6vh;
     text-decoration: dotted;
     padding: 10px;
-    text-shadow: 0 0 5px #da0556;
+    /* text-shadow: 0 0 5px #da0556; */
   }
   .nvg-opt:hover:before {
     content: attr(data-text);
@@ -201,6 +201,9 @@
   font-weight: 700;
   transition: 0.5s;
   text-shadow: 0 0 3px #ffffff;
+  text-shadow: 0 0 5px hsl(142, 83%, 45%), 0 0 15px hsl(142, 83%, 45%),
+    0 0 30px hsl(142, 83%, 45%), 0 0 60px hsl(142, 83%, 45%);
+  padding: 20px;
 }
 .pt-5:hover .nav-lst .nvg-opt {
   color: #0002;

@@ -65,18 +65,17 @@ function Footer() {
           <img
             className="foot-logocit"
             src={cit_logo}
-            width={150}
-            height={100}
             style={{
-              width: "500px",
-              height: "150px",
+              width: "70%",
+              height: "auto",
               position: "relative",
-              right: "30%",
-              top: "10%",
+              left: "50%",
+              transform: "translateX(-50%)",
             }}
             alt="CIT LOGO"
           />
         </div>
+
         <div className="footer-col">
           <h4 className="connect">Connect with us</h4>
           <div className="social-links">

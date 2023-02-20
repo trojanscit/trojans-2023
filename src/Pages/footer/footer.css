@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   width: 100vw;
   padding: 25px 0;
+  overflow: hidden;
 }
 #queries-foot {
   font-size: 30px;
