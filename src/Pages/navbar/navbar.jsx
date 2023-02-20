@@ -36,7 +36,7 @@ function Navbar() {
           </li>
 
           <li className="nav-lst">
-            <a className="nvg-opt" href="#" data-text="Register">
+            <a className="nvg-opt" href="/registration" data-text="Register">
               Register
             </a>
           </li>

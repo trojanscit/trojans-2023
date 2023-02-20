@@ -13,7 +13,7 @@ function Herohome() {
       <img src={Trojans} id="logo_trojans"  alt=""/>
       <h3 id="home-intro">A NATIONAL LEVEL TECHNICAL SYMPOSIUM</h3>
 
-      <Link to="/register" className="register-button-home">
+      <Link to="/registration" className="register-button-home">
         Register
       </Link>
 

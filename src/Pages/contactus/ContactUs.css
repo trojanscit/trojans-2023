@@ -18,6 +18,7 @@
   flex-wrap: wrap;
   box-shadow: 0 0 5px rgb(49, 175, 175), 0 0 15px rgb(49, 175, 175),
     0 0 15px rgb(49, 175, 175), 0 0 6px rgb(49, 175, 175);
+    border-radius: 10px;
 }
 
 .contact-links1,

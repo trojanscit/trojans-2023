@@ -8,19 +8,19 @@ import {Helmet} from "react-helmet";
 
 function Registration() {
 	const [eventType, setEventType] = useState("Technical");
-	const [data, setData] = useState([]);
+	// const [data, setData] = useState([]);
 
 	const name = useRef("");
 	const email = useRef("");
 	const phone = useRef("");
 	const college = useRef("");
 
-	const events = [];
-	useEffect(() => {
-		if (eventType === "technical") {
-			setData(events.filter((eventType = "technical")));
-		}
-	});
+	// const events = [];
+	// useEffect(() => {
+	// 	if (eventType === "technical") {
+	// 		setData(events.filter((eventType = "technical")));
+	// 	}
+	// });
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
