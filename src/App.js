@@ -28,17 +28,17 @@ function App() {
 					<Route path="/teams" element={<Teams />}></Route>
 					<Route path="/workshop" element={<Demo2 />}></Route>
 					<Route
-						path="/events/technical"
+						path="/events/:eventType"
 						element={<EventsDetails />}
 					></Route>
-					<Route
+					{/* <Route
 						path="/events/non-technical"
 						element={<EventsDetails />}
 					></Route>
 					<Route
 						path="/events/gaming"
 						element={<EventsDetails />}
-					></Route>
+					></Route> */}
 				</Routes>
 			</Router>
 		</div>
