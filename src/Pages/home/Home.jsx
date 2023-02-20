@@ -8,25 +8,25 @@ import Background from "../bghome/background";
 import AboutUs from "./aboutus";
 import Navbar from "../navbar/navbar";
 import Footer from "../footer/footer.jsx";
-import {Helmet} from "react-helmet";
-
+import { Helmet } from "react-helmet";
+import "./scroll.css";
 function Home() {
-	return (
-		<div>
-			<Helmet>
-				<title>Home | Trojans</title>
-			</Helmet>
+  return (
+    <div>
+      <Helmet>
+        <title>Home | Trojans</title>
+      </Helmet>
 
-			<Navbar />
-			<Background />
-			<Herohome />
-			{/* <Demo2 /> */}
-			<AboutUs />
-			<Eventshome />
-			<ContactUs />
-			<Footer />
-		</div>
-	);
+      <Navbar />
+      <Background />
+      <Herohome />
+      {/* <Demo2 /> */}
+      <AboutUs />
+      <Eventshome />
+      <ContactUs />
+      <Footer />
+    </div>
+  );
 }
 
 export default Home;

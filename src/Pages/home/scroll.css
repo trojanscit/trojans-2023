@@ -1,0 +1,18 @@
+/* For Firefox */
+* {
+  scrollbar-color: blue;
+  scrollbar-width: thin;
+}
+
+/* For Webkit */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(190, 11, 200);
+}

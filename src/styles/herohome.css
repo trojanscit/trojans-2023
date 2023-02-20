@@ -24,6 +24,8 @@
   border: none;
   border-radius: 10px;
   z-index: 9;
+  width: fit-content;
+  padding: 11px;
   text-decoration: none;
   list-style: none;
   font-weight: bold;
