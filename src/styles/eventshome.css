@@ -115,9 +115,9 @@
   padding: 30px;
   border: 0px solid transparent;
   width: 300px;
-  text-shadow: 0 0 7px #28ea5c, 0 0 1px #28ea5c, 0 0 2px #28ea5c,
+  /* text-shadow: 0 0 7px #28ea5c, 0 0 1px #28ea5c, 0 0 2px #28ea5c,
     0 0 4px #28ea5c, 0 0 2px #28ea5c, 0 0 9px #28ea5c, 0 0 2px #28ea5c,
-    0 0 1px #28ea5c;
+    0 0 1px #28ea5c; */
 }
 .posters {
   /* display: none;

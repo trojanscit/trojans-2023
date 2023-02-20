@@ -185,11 +185,8 @@
   border: none;
   border-radius: 10px;
   z-index: 9;
-  box-shadow: 0 0 120px #b89420;
+  box-shadow: 0 0 5px #b89420, 0 0 15px #b89420;
   cursor: pointer;
-  background: #19e5f8;
-  box-shadow: 0 0 5px #19e5f8, 0 0 15px #19e5f8, 0 0 30px #19e5f8,
-    0 0 60px #19e5f8;
 }
 
 .submit-btn1:hover {

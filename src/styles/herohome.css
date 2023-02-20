@@ -16,7 +16,6 @@
 
 .register-button-home {
   color: rgb(0, 0, 0);
-  background-color: #1ce1ff;
   position: relative;
   top: 20px;
   padding: 4px 13px;
@@ -29,12 +28,11 @@
   text-decoration: none;
   list-style: none;
   font-weight: bold;
-  background: #19e5f8;
-  box-shadow: 0 0 5px #19e5f8, 0 0 15px #19e5f8, 0 0 30px #19e5f8,
-    0 0 60px #19e5f8;
+  background: #b89420;
+  box-shadow: 0 0 5px #b89420, 0 0 15px #b89420;
 }
 .register-button-home:hover {
-  background-color: #1ce1ff;
+  background-color: #e7b614;
   opacity: 0.7;
 }
 #logo_trojans {

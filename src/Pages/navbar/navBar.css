@@ -201,8 +201,6 @@
   font-weight: 700;
   transition: 0.5s;
   text-shadow: 0 0 3px #ffffff;
-  text-shadow: 0 0 5px hsl(142, 83%, 45%), 0 0 15px hsl(142, 83%, 45%),
-    0 0 30px hsl(142, 83%, 45%), 0 0 60px hsl(142, 83%, 45%);
   padding: 20px;
 }
 .pt-5:hover .nav-lst .nvg-opt {

@@ -57,12 +57,12 @@
   font-family: sans-serif;
   border-radius: 10px;
   padding: 5px;
-  background: #06e9d6;
+  /* background: #06e9d6; */
   text-shadow: 0 0 7px #28ea5c, 0 0 1px #28ea5c, 0 0 2px #28ea5c,
     0 0 4px #28ea5c, 0 0 2px #28ea5c, 0 0 9px #28ea5c, 0 0 2px #28ea5c,
     0 0 1px #28ea5c;
-  box-shadow: 0 0 5px rgb(49, 175, 175), 0 0 15px rgb(49, 175, 175),
-    0 0 15px rgb(49, 175, 175), 0 0 6px rgb(49, 175, 175);
+  /* box-shadow: 0 0 5px rgb(49, 175, 175), 0 0 15px rgb(49, 175, 175),
+    0 0 15px rgb(49, 175, 175), 0 0 6px rgb(49, 175, 175); */
 }
 
 @keyframes flicker {
