@@ -3,12 +3,13 @@ const { google } = require('googleapis');
 exports.sheetsPost = async (req, res) => {
 	console.log(req.body);
 	const {
-		name, email,
+		name,
+		email,
 		phone,
 		department,
 		college,
-		eventType,
-		eventName,
+		year,
+		events,
 	} = req.body;
 	const auth = new google.auth.GoogleAuth({
 		keyFile: './credentials.json',
@@ -18,26 +19,27 @@ exports.sheetsPost = async (req, res) => {
 	const client = await auth.getClient();
 
 	const googleSheets = await google.sheets({ version: 'v4', auth: client });
-	await googleSheets.spreadsheets.values
-		.append({
-			auth,
-			spreadsheetId: '1easjHdqC5SXeeBa2hSaiBjJ87Mv6owIRkdMj_gOVqm0',
-			range: 'Trojans',
-			valueInputOption: 'USER_ENTERED',
-			resource: {
-				values: [
-					[
-						name,
-						department,
-						year,
-						eventType,
-						eventName,
-						college,
+	Objects.keys(events).foreach(async event => {
+		await googleSheets.spreadsheets.values
+			.append({
+				auth,
+				spreadsheetId: '1easjHdqC5SXeeBa2hSaiBjJ87Mv6owIRkdMj_gOVqm0',
+				range: 'Trojans',
+				valueInputOption: 'USER_ENTERED',
+				resource: {
+					values: [
+						[
+							name,
+							email,
+							phone,
+							department,
+							college,
+							year,
+							event,
+						]
 					]
-				]
-			}
-		})
-		.then((response) => {
-			res.status(200).json('ok');
-		});
+				}
+			})
+	})
+	res.status(200).json('ok');
 };
