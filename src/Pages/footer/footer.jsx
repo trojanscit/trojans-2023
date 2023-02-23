@@ -3,7 +3,15 @@ import "./footer.css";
 import logo_round from "../../Assets/Trojans_logo/trojans_logo.webp";
 import { Icon } from "@iconify/react";
 import cit_logo from "../../Assets/Trojans_logo/CIT_Logo_white.webp";
+import {Link} from 'react-router-dom'
+
+
+
 function Footer() {
+  const scrollUp = ()=> {
+    window.scrollTo({top:0, behavior:'smooth'})
+  }
+  
   return (
     <div className="footer">
       <div className="main-row">
@@ -20,19 +28,19 @@ function Footer() {
           <h4 className="foot-heading">About</h4>
           <ul className="foot-ul">
             <li className="foot-row">
-              <a className="foot-a" href="#">
+              <Link className="foot-a" to="/" onClick={scrollUp}>
                 Trojans
-              </a>
+              </Link>
             </li>
             <li className="foot-row">
-              <a className="foot-a" href="#">
+              <Link className="foot-a" to="/">
                 Department
-              </a>
+              </Link>
             </li>
             <li className="foot-row">
-              <a className="foot-a" href="#">
+              <Link className="foot-a" to="/">
                 College
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -40,24 +48,27 @@ function Footer() {
           <h4 className="foot-heading">Events</h4>
           <ul className="foot-ul">
             <li className="foot-row">
-              <a className="foot-a" href="#">
+              <Link className="foot-a" to="/events/technical">
                 Technical
-              </a>
+              </Link>
+              
             </li>
             <li className="foot-row">
-              <a className="foot-a" href="#">
+              <Link className="foot-a" to="/events/non-technical">
                 Non-Technical
-              </a>
+              </Link>
             </li>
             <li className="foot-row">
-              <a className="foot-a" href="#">
+              <Link className="foot-a" to="/events/gaming">
                 Gaming
-              </a>
+              </Link>
+              
             </li>
             <li className="foot-row">
-              <a className="foot-a" href="#">
+              <Link className="foot-a" to="/workshop">
                 Workshop
-              </a>
+              </Link>
+              
             </li>
           </ul>
         </div>
@@ -66,7 +77,7 @@ function Footer() {
             className="foot-logocit"
             src={cit_logo}
             style={{
-              width: "70%",
+              width: "100%",
               height: "auto",
               position: "relative",
               left: "50%",

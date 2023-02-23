@@ -22,13 +22,13 @@ function Demo2() {
       organizer: "Hello Everyone",
     },
     {
-      workshopTitle: "Workshop 1",
+      workshopTitle: "Workshop 2",
       image_url: "",
       price: 100,
       organizer: "Hello Everyone",
     },
     {
-      workshopTitle: "Workshop 1",
+      workshopTitle: "Workshop 3",
       image_url: "",
       price: 100,
       organizer: "Hello Everyone",

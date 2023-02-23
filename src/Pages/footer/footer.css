@@ -28,10 +28,11 @@
   z-index: 999999999;
 }
 .footer-col {
-  width: 23%;
+  width: 20%;
   position: relative;
   left: 2%;
   padding: 0 10px;
+  margin-left: 4rem;
 }
 .footer-col .foot-heading {
   font-size: 28px;
@@ -99,7 +100,13 @@
 }
 
 .foot-logocit {
-  padding: 20px;
+  margin-top: 3rem;
+  margin-left: 2rem;
+
+}
+
+.footer-col .foot-logocit img{
+  width: 100%;
 }
 
 @media only screen and (max-width: 1024px) {

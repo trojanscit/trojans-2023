@@ -2,7 +2,10 @@ section {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: black;
+  background-color: black;
+  background-size: 100vh;
+
+  /* -webkit-filter: invert(1); */
   display: flex;
   flex-direction: column;
   overflow: hidden;

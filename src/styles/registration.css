@@ -43,11 +43,27 @@
 	background: #fff;
 	padding: 25px 30px;
 	border-radius: 5px;
+
 }
-.container1 .title {
+.container1 .title h1{
 	font-size: 25px;
 	font-weight: 500;
 	position: relative;
+	
+}
+
+.title{
+	display: flex;
+	justify-content: space-between;
+}
+
+.title img{
+	width: 48px;
+	z-index: 909000000001;
+	
+}
+.title a{
+	z-index: 909000000001;
 }
 
 .container1 .title::before {

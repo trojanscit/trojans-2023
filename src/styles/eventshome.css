@@ -60,6 +60,16 @@
   font-size: 1.6rem;
   line-height: 25px;
 }
+
+.content button:hover {
+  background-color: rgb(47, 233, 233);
+  transition: 0.3s ease-in-out;
+  
+}
+
+.content button:focus{
+  background-color: rgb(47, 233, 233);
+}
 /* .card-event-home .content {
   transform: translateY(100%);
   opacity: 0;
