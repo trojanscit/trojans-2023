@@ -6,9 +6,8 @@ exports.sheetsPost = async (req, res) => {
 		name,
 		email,
 		phone,
-		department,
-		college,
 		year,
+		college,
 		events,
 	} = req.body;
 	const auth = new google.auth.GoogleAuth({
@@ -19,7 +18,7 @@ exports.sheetsPost = async (req, res) => {
 	const client = await auth.getClient();
 
 	const googleSheets = await google.sheets({ version: 'v4', auth: client });
-	Objects.keys(events).foreach(async event => {
+	const addToExcel = async (length) => {
 		await googleSheets.spreadsheets.values
 			.append({
 				auth,
@@ -32,14 +31,20 @@ exports.sheetsPost = async (req, res) => {
 							name,
 							email,
 							phone,
-							department,
-							college,
 							year,
-							event,
-						]
-					]
+							Object.keys(events)[length].split('Type')[0],
+							events[Object.keys(events)[length]],
+							college,
+						]]
+				}
+			}).then(() => {
+				if (!(length <= 0))
+					addToExcel(length - 1)
+				else {
+
+					return res.status(200).json('ok');
 				}
 			})
-	})
-	res.status(200).json('ok');
+	}
+	await addToExcel(Object.keys(events).length - 1)
 };
