@@ -22,6 +22,10 @@ app.use('/api', sheetsRoute);
 app.use('/api', contactRoute);
 app.use('/api', AuthRoute);
 
+app.get("/", (req, res) => {
+	res.send("Trojans")
+})
+
 app.listen(process.env.PORT, () =>
 	console.log(`SERVER IS RUNNING ON PORT ${process.env.PORT}`)
 );
