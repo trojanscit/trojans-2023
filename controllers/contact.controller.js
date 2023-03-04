@@ -1,4 +1,4 @@
-const nodemailer = require('nodemailer');
+const nodemailer = require("nodemailer");
 
 exports.contactPost = async (req, res) => {
 	const output = `
@@ -12,26 +12,38 @@ exports.contactPost = async (req, res) => {
     <p>${req.body.message}</p>
     `;
 	let transporter = nodemailer.createTransport({
-		service: 'Gmail',
-		host: 'smtp.gmail.com',
+		service: "Gmail",
+		// host: "smtp.gmail.com",
 		auth: {
-			user: process.env.EMAIL,
-			pass: process.env.PASSWORD
-		}
+			// user: process.env.EMAIL,
+			// pass: process.env.PASSWORD
+			auth: {
+				user: "arglebargletamil@gmail.com",
+				pass: `aufxkmguliuxyleh`,
+			},
+		},
 	});
 
 	let mailOptions = {
-		from: process.env.EMAIL,
-		to: req.body.email,
-		subject: 'Customer Contact Request',
-		html: output
+		// from: process.env.EMAIL,
+		// to: 'trojans@citchennai.net',
+		from: "<arglebargletamil@gmail.com>",
+		to: "arglebargletamil@gmail.com",
+		subject: "Customer Contact Request",
+		html: output,
 	};
+	// let mailOptions = {
+	// 	from: process.env.EMAIL,
+	// 	to: req.body.email,
+	// 	subject: 'Customer Contact Request',
+	// 	html: output
+	// };
 
 	await transporter.sendMail(mailOptions, (error, info) => {
 		if (error) {
 			console.log(error);
-			return res.json('error');
+			return res.json("error");
 		}
-		res.status(200).json('success');
+		res.status(200).json("success");
 	});
 };

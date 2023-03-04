@@ -1,7 +1,6 @@
 const {google} = require("googleapis");
 
 exports.sheetsPost = async (req, res) => {
-	console.log(req.body);
 	const {
 		name,
 		email,
