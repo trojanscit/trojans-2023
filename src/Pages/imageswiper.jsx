@@ -25,19 +25,22 @@ import Talentron from "../images/nonTech/talentron.jpg";
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const images = [
-	CleverBot,
 	CodersChemistry,
-	Comicquiz,
-	ShutterstopOnline,
-	OkFine,
-	Shipwreck,
-	GullyCricket,
+	CleverBot,
 	HuntForTheHidden,
 	CodeJigsaw,
 	FinalDraft,
 	RhythmRivalry,
-	Talentron,
+];
+
+const images1 = [
+	Comicquiz,
+	GullyCricket,
+	OkFine,
+	Shipwreck,
+	ShutterstopOnline,
 	Squidgame,
+	Talentron,
 ];
 
 const ImageSwiper = () => {
@@ -58,83 +61,50 @@ const ImageSwiper = () => {
 	return (
 		<div>
 			<Swiper
-				spaceBetween={30}
+				slidesPerView={1}
+				spaceBetween={10}
 				centeredSlides={true}
-				autoplay={false}
-				pagination={{
-					clickable: true,
-				}}
 				navigation={true}
-				className="mySwiper"
-				onSwiper={(swiper) => (swiperRef.current = swiper)}
+				autoplay={true}
+				pagination={{
+					dynamicBullets: true,
+				}}
+				loop={true}
+				breakpoints={{
+					640: {
+						slidesPerView: 1,
+						spaceBetween: 20,
+					},
+					768: {
+						slidesPerView: 2,
+						spaceBetween: 40,
+					},
+					1024: {
+						slidesPerView: 3,
+						spaceBetween: 50,
+					},
+				}}
+				modules={[Pagination, Navigation, Autoplay]}
+				className="mySwiper bg-transparent"
 			>
 				{images.map((image, index) => {
 					return (
-						<SwiperSlide>
-							<img src={image} alt="" id="img_swiper" />
-						</SwiperSlide>
+						<>
+							<SwiperSlide key={index}>
+								<img src={image} alt="" id="img_swiper" />
+							</SwiperSlide>
+						</>
 					);
 				})}
-				{/* <SwiperSlide>
-					<img
-						src="https://res.cloudinary.com/trojanscit/image/upload/v1677922255/tech/codersChemistry_jyjba0.jpg"
-						alt=""
-						id="img_swiper"
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<img
-						src="https://res.cloudinary.com/trojanscit/image/upload/v1677922257/tech/cleverBot_py1kpk.jpg"
-						alt=""
-						id="img_swiper"
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src={ShutterstopOnline} alt="" id="img_swiper" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src={Comicquiz} alt="" id="img_swiper" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src={OkFine} alt="" id="img_swiper" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src={Shipwreck} alt="" id="img_swiper" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src={GullyCricket} alt="" id="img_swiper" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src={HuntForTheHidden} alt="" id="img_swiper" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img
-						src="https://res.cloudinary.com/trojanscit/image/upload/v1677922256/tech/code_jigsaw_mnsgaz.jpg"
-						alt=""
-						id="img_swiper"
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src={FinalDraft} alt="" id="img_swiper" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src={RhythmRivalry} alt="" id="img_swiper" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src={Talentron} alt="" id="img_swiper" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src={Squidgame} alt="" id="img_swiper" />
-				</SwiperSlide> */}
 			</Swiper>
-			<div>
+			{/* <div>
 				<button onClick={handlePrev} id="slider_button_prev">
 					{"<"}
 				</button>
 				<button onClick={handleNext} id="slider_button_next">
 					{">"}
 				</button>
-			</div>
+			</div> */}
 		</div>
 	);
 };

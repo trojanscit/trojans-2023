@@ -31,10 +31,10 @@ function Eventshome() {
         <div className="card-event-home">
           <div className="content">
             <button className="be" onClick={handleposeter1}>
-              <h1>Events</h1>
+              <h1>Technical</h1>
             </button>
             <button className="be" onClick={handleposeter2}>
-              <h1>Workshop</h1>
+              <h1>Non Technical</h1>
             </button>
           </div>
         </div> 

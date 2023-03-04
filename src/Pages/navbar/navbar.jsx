@@ -24,7 +24,7 @@ function Navbar() {
               Events
             </a>
           </li>
-          <li className="nav-lst">
+          {/* <li className="nav-lst">
             <a className="nvg-opt" href="/workshop" data-text="Workshop">
               Workshop
             </a>
@@ -33,7 +33,7 @@ function Navbar() {
             <a className="nvg-opt" href="/sponsors" data-text="Sponsors">
               Sponsors
             </a>
-          </li>
+          </li> */}
 
           <li className="nav-lst">
             <a className="nvg-opt" href="/registration" data-text="Register">
