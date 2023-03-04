@@ -37,7 +37,7 @@ function Eventshome() {
               <h1>Workshop</h1>
             </button>
           </div>
-        </div>
+        </div> 
       </div>
       <div className={poster1 ? "move_poster" : "posters"}>
         <div className="card-event-home">
