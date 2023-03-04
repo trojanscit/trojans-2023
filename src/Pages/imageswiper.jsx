@@ -70,15 +70,8 @@ const ImageSwiper = () => {
 			>
 				{images.map((image, index) => {
 					return (
-						<SwiperSlide 
-            style={{position: "relative"}}
-            >
-							<img
-								src={image}
-								style={{top: 0, left: 0, position: "absolute"}}
-								alt=""
-								id="img_swiper"
-							/>
+						<SwiperSlide>
+							<img src={image} alt="" id="img_swiper" />
 						</SwiperSlide>
 					);
 				})}
