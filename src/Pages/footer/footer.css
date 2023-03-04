@@ -16,6 +16,7 @@
   padding: 10px;
   position: relative;
   top: 10%;
+  width: 50%;
   font-size: 10px;
   list-style: none;
 }
@@ -148,7 +149,7 @@
   .footer-col {
     width: 23%;
     position: relative;
-    left: 35%;
+    left: 20%;
     padding: 0 10px;
   }
   .footer-col .foot-heading {

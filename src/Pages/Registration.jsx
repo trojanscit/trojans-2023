@@ -3,7 +3,7 @@ import '../styles/registration.css';
 import Navbar from './navbar/navbar';
 import Footer from './footer/footer';
 import { toast } from 'react-toastify';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { register } from '../axios/register.axios';
 import { Helmet } from 'react-helmet';
 
@@ -19,7 +19,7 @@ function Registration() {
 	const college = useRef('');
 	const year = useRef('');
 
-	//   const navigate = useNavigate()
+	const navigate = useNavigate()
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 
@@ -31,7 +31,8 @@ function Registration() {
 			year.current.value,
 			{ techType, nonTechType, gamingType, workshopType }
 		);
-		await toast.success('Good job', { theme: 'dark' });
+		await toast.success('Good job');
+		navigate("/")
 	};
 
 	return (

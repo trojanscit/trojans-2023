@@ -86,10 +86,11 @@
     cursor: pointer;
     border-radius: 15px;
     position: relative;
+    font-size: 6rem;
     padding: 25px 30px;
     color: var(--primary-color);
     height: 20%; /* reduce the height of the containers */
-    width: 55%;
+    width: 80%;
     margin: 10px 4%;
     text-decoration: none;
   }

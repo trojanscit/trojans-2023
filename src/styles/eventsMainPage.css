@@ -1,6 +1,6 @@
 /* Please ❤ this if you like it! */
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
 *,
 *::before,
 *::after {
@@ -16,7 +16,7 @@
 	width: 200%;
 	height: 200vh;
 	background: transparent
-		url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+		url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
 	background-repeat: repeat;
 	animation: bg-animation 0.2s infinite;
 	opacity: 0.9;
@@ -192,7 +192,7 @@ p {
 	mix-blend-mode: difference;
 }
 .hover-text h2 {
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-weight: 800;
 	font-size: 8vw;
 	line-height: 1;
@@ -254,7 +254,7 @@ p {
 	text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
 		0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
 	color: #fff6a9;
-	font-family: 'Sacramento', cursive;
+	font-family: "Sacramento", cursive;
 }
 
 .close_button {
@@ -271,6 +271,27 @@ p {
 	/* overflow-y: scroll; */
 }
 
+.mainContent h1 {
+	font-size: 50px;
+	text-align: center;
+}
+
+.mainContent h3 {
+	font-size: 25px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.mainContent h4 {
+	font-size: 16px;
+	text-align: center;
+}
+
+.mainContent pre {
+	font-size: 16px;
+	white-space: pre-wrap;
+}
+
 .image-title {
 	position: absolute;
 	display: none;
@@ -282,6 +303,10 @@ p {
 }
 
 @media (max-width: 767px) {
+	.main-event-type h1 {
+		font-size: 3rem;
+		width: 100%;
+	}
 	.section-col {
 		-ms-flex: 0 0 100%;
 		flex: 0 0 100%;
@@ -308,6 +333,13 @@ p {
 	}
 
 	.popUpBoxEvents {
-		justify-content: flex-start;
+		justify-content: center;
+	}
+
+	.mainContent h1 {
+		font-size: 30px;
+	}
+	.mainContent h3 {
+		font-size: 22px;
 	}
 }

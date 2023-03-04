@@ -90,14 +90,17 @@
 
 .links1 {
   display: flex;
+  color: #fff;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
   padding-top: 50px;
+  font-size: 25px;
+  margin: 10px;
 }
 
-.link1 {
-  margin: 10px;
-  cursor: pointer;
+.links1 h1 {
+  font-weight: 400;
 }
 
 #contact1 img {

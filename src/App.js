@@ -16,7 +16,6 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <div>
-      {" "}
       {/* <Navbar /> */}
       <ToastContainer
         position="top-left"
@@ -27,7 +26,6 @@ function App() {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="dark"
       />
       <Router>
         <Routes>
