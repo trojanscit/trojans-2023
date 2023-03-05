@@ -1,0 +1,154 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+  background-color: #24262b;
+  box-shadow: 0 20px #e91e63;
+  z-index: 999999999;
+}
+
+.mainfooter-div {
+  display: flex;
+  /* display: grid; */
+
+  justify-content: space-evenly;
+  align-items: start;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.logo_text {
+  margin-left: 10px;
+  padding-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_text li {
+  margin-top: 2rem;
+}
+
+.logo_text a {
+  margin: 0.5rem;
+  color: white;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1rem;
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1rem;
+}
+
+.about h1 {
+  font-size: 3rem;
+  color: aliceblue;
+  padding: 0.5rem 0;
+
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.events h1 {
+  font-size: 3rem;
+  color: aliceblue;
+  padding: 0.5rem 0;
+  padding-right: 1.5rem;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.events li a {
+  color: aliceblue;
+  font-size: medium;
+  text-decoration: none;
+}
+.about li a {
+  color: aliceblue;
+  font-size: medium;
+  text-decoration: none;
+}
+
+.events li {
+  margin: 10px 0;
+}
+
+.about li {
+  margin: 10px 0;
+}
+
+.citlogo_div {
+  width: 100%;
+  margin-right: 10px;
+
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  color: white;
+  border: solid;
+  border-width: 0.15rem;
+}
+
+.cpyrt_div h1 {
+  font-size: large;
+  color: white;
+}
+
+.cpyrt_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #24262b;
+    box-shadow: 0 20px #e91e63;
+    z-index: 999999999;
+  }
+
+  .mainfooter-div{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .about{
+    padding-right: 3rem;
+  }
+
+  .events{
+    padding-right: 1rem;
+  }
+
+}
