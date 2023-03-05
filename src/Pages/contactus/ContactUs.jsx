@@ -98,7 +98,7 @@ function ContactUs() {
 							</div>
 							<div class="form-item1">
 								<input
-									type="text"
+									type="email"
 									name="email"
 									required
 									ref={email}

@@ -22,7 +22,7 @@ function eventsbg() {
 						<h1>Non Technical</h1>
 					</div>
 				</a>
-				<a class="container" href="/workshop">
+				{/* <a class="container" href="/workshop">
 					<div class="content">
 						<h1>Workshop</h1>
 					</div>
@@ -31,7 +31,7 @@ function eventsbg() {
 					<div class="content">
 						<h1>Gaming</h1>
 					</div>
-				</a>
+				</a> */}
 			</div>
 			<Footer />
 		</>
